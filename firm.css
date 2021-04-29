@@ -1,29 +1,52 @@
+.firm1{
+  position: relative;
+}
+.firm2{
+  position: relative;
+}
+.firm3{
+  position: relative;
+}
+.swot{
+    margin: 20px;
+    text-align: center;
+    position: relative;
+    width: 1400px;
+    height: 700px;
+    background: -webkit-linear-gradient(white,gray);
+    background: -o-linear-gradient(white,gray);
+    background: -moz-linear-gradient(white,gray);
+    background: linear-gradient(white,gray);
+}
 .container{
-    width: 900px;
+    width: 1200px;
     margin: 0 auto;
   }
   .card{
     /* 設定父親定位點 */
     position: relative;
-    width: 270px;
+    width: 500px;
+    height: 300px;
     float:left;
     margin: 10px;
+    left: 40px;
   }
   img{
     display: block;
     width: 100%;
-    height: auto;
+    height: 300px;
   }
   .info{
   /*   display: none; */
     opacity: 0;
     position: absolute;
     box-sizing: border-box;
-    background-color: rgba(0,0,0,.3);
+    background-color: rgba(0,0,0,.2);
     top: 0;
     width: 100%;
     height: 100%;
     text-align: center;
+    font-size: 50px;
     padding-top: 40px;
   }
   .info p{
@@ -31,5 +54,44 @@
   }
   .info:hover{
     -webkit-transition: 500ms;
-    opacity: 1;
+    opacity: 100;
+  }
+  .culture{
+    position: relative;
+    margin: 50px;
+    text-align: center;
+    background-color: gainsboro;
+  }
+  .ct{
+    width: 800px;
+    height: auto;
+    padding: 30px;
+    position: relative;
+    left: 300px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .dream{
+    padding: 10px;
+    background-color: burlywood;
+  }
+  .cost{
+    padding: 10px;
+    background-color: coral;
+  }
+  .ct img{
+    width: 250px;
+    height: 250px;
+  }
+  .lock{
+    text-align: center;
+    position: relative;
+  }
+  .lock img{
+    position: relative;
+    top: 50;
+    left: 300px;
+    width: 1000px;
+    height: 500px;
   }
