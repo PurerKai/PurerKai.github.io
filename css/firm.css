@@ -1,16 +1,17 @@
 .firm1{
   position: relative;
 }
-.firm2{
+.com-seat{
   position: relative;
-}
-.firm3{
-  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
 }
 .swot{
     margin: 20px;
-    text-align: center;
-    position: relative;
+    position:relative;
+    margin-top: auto;
+    padding-top: auto;
     width: 1400px;
     height: 700px;
     background: -webkit-linear-gradient(white,gray);
@@ -54,39 +55,7 @@
   }
   .info:hover{
     -webkit-transition: 500ms;
-    opacity: 100;
-  }
-  .culture{
-    position: relative;
-    margin: 50px;
-    text-align: center;
-    background-color: gainsboro;
-  }
-  .ct{
-    width: 800px;
-    height: auto;
-    padding: 30px;
-    position: relative;
-    left: 300px;
-    margin: 30px;
-    display: flex;
-    flex-direction: column;
-  }
-  .dream{
-    padding: 10px;
-    background-color: burlywood;
-  }
-  .cost{
-    padding: 10px;
-    background-color: coral;
-  }
-  .ct img{
-    width: 250px;
-    height: 250px;
-  }
-  .lock{
-    text-align: center;
-    position: relative;
+    opacity: 1;
   }
   .lock img{
     position: relative;
@@ -95,3 +64,97 @@
     width: 1000px;
     height: 500px;
   }
+  .snip1523 {
+  font-family: 'Lato', sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  left: 130px;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  color: #ffffff;
+  text-align: left;
+  font-size: 16px;
+  background-color: #1A1A1A;
+}
+
+.snip1523 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.45s ease;
+  transition: all 0.45s ease;
+}
+
+.snip1523 img {
+  vertical-align: top;
+  max-width: 100%;
+  backface-visibility: hidden;
+}
+
+.snip1523 figcaption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  padding: 30px;
+  background-color: #202123;
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+}
+.snip1523 h2,
+.snip1523 h3,
+.snip1523 p {
+  margin: 0;
+}
+
+.snip1523 h2,
+.snip1523 h3 {
+  font-family: 'Slabo 27px', serif;
+  line-height: 1.2em;
+}
+
+.snip1523 h2 {
+  font-size: 1.9em;
+  color: #35ADF9;
+}
+
+.snip1523 h3 {
+  color: #EBEBEB;
+  font-size: 1.3em;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+.snip1523 p {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 0.9em;
+  margin-top: 12px;
+  padding: 12px 0 15px;
+  line-height: 1.5em;
+}
+
+.snip1523 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.snip1523:hover > img,
+.snip1523.hover > img {
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+.snip1523:hover figcaption,
+.snip1523.hover figcaption {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+}
