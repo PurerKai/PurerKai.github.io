@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Industry chain</title>
+    <!-- BootStrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/Industry chain.css" />
+  </head>
+  <body>   
+         <!-- 頁面導覽S  -->
+        <ul class="nav nav-tabs" id="myTab">
+          <li class="nav-item">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#Home" 
+            type="button">Home</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" id="IT-tab" data-bs-toggle="tab" data-bs-target="#IT"
+             type="button">IT</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" id="IC-tab" data-bs-toggle="tab" data-bs-target="#IC"
+             type="button">IC</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" id="IP-tab" data-bs-toggle="tab" data-bs-target="#IP"
+             type="button">IP</button>
+          </li>
+        </ul>
+        <!-- 頁面導覽E  -->
+        <!-- 頁面內容S  -->
+        <div class="tab-content" id="myTabContent">
+
+          <div class="tab-pane fade show active" id="Home">
+            <div class="container">
+              <div class="row">
+                <h2>產業地圖</h2>
+                <div class="col">   </div>
+                <div class="mxgraph" style="max-width:100%;border:1px solid transparent;" 
+                  data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom layers lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile host=\&quot;app.diagrams.net\&quot; modified=\&quot;2021-05-13T17:00:48.134Z\&quot; agent=\&quot;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36\&quot; etag=\&quot;m9I5Hgu8pEbSE-nGf_xv\&quot; version=\&quot;14.6.12\&quot; type=\&quot;google\&quot;&gt;&lt;diagram id=\&quot;fOa1yZ4nCiI4kex8ZxDd\&quot; name=\&quot;Page-1\&quot;&gt;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&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}"></div>
+                  <script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
+              </div>
+            </div> 
+          </div>
+          
+          <div class="tab-pane fade" id="IT"> 
+            <div class="container">
+              <div class="row">
+                  <h2>全球紡織業當前趨勢</h2>
+                  <div class="col">  </div>
+                   <div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="{&quot;highlight&quot;:&quot;#FF3333&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom layers lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile host=\&quot;app.diagrams.net\&quot; modified=\&quot;2021-05-13T18:23:40.572Z\&quot; agent=\&quot;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36\&quot; etag=\&quot;hFZNlgldflc2sqwQ3YCO\&quot; version=\&quot;14.6.13\&quot; type=\&quot;google\&quot;&gt;&lt;diagram id=\&quot;07fea595-8f29-1299-0266-81d95cde20df\&quot; name=\&quot;Page-1\&quot;&gt;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&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}"></div>
+              <script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
+              </div>
+            </div>  
+          </div>
+                
+          <div class="tab-pane fade" id="IC">
+            <div class="container">
+              <div class="row">
+              
+                <div class="col"> </div>
+                <div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom layers lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile host=\&quot;app.diagrams.net\&quot; modified=\&quot;2021-05-13T18:50:42.810Z\&quot; agent=\&quot;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36\&quot; etag=\&quot;8PKwUkdslaFVva16wcq3\&quot; version=\&quot;14.6.13\&quot; type=\&quot;google\&quot;&gt;&lt;diagram id=\&quot;X-FPsiuNETdVk2klb6QM\&quot; name=\&quot;Page-1\&quot;&gt;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&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}"></div>
+                <script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
+              </div>
+            </div> 
+          </div>
+          <div class="tab-pane fade" id="IP">
+            <div class="container">
+              <div class="row">
+             <div class="col"> </div>
+              </div>
+            </div> 
+            <h2 class="mx-auto" style="width:200px">產業比較</h2>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+               
+              </div>
+            </div>
+
+          </div>
+       </div>
+       <main class="container"> 
+        <div class="row">
+            <h1 class="A4 col-12 ">企業介紹</h1>
+            <h1 class="A6 col-12 ">集盛事業</h1>  
+        </div>
+        <section class="row mb-5">
+            <div class="col">  
+                <img class="AA" src="IMG/集盛.jfif">
+            </div>
+            <div class="indro col"> 
+                <h3 class="A3">定位
+                <p class="A2">●	建立纖維材料及工程塑膠的核心技術。<br>
+                    <br>  ●	上下游垂直整合在化纖及工程塑膠領域提供品質穩定及高值化產品滿足客戶需求。<br>
+                    <br> ●	專注本業發展，控制成本，穩健財務結構。 </p>
+            </div> 
+            <div class="indro col"> 
+                <h3 class="A3">企業規模
+                <p class="A2">3座假撚廠、1座氣撚廠<br><br>2座尼龍紡絲廠、3座尼龍聚合廠<br><br>1座複合材料廠等<br><br>共10座工廠</p>
+            </div> 
+        </section>
+        <section class="row mb-5">
+            <div  class="col">
+                <img  src="IMG/集盛圖下.PNG">
+            </div>
+            <div class="col">  
+              <img src="IMG/集盛 圖上.PNG">
+            </div>
+        </section>
+        <h1 class="A7 col-3">專注研發</h1>  
+        <div class="indro col-12"> 
+            <h3 class="A3">集盛創新研發中心
+            <p class="A2"> ●產學合作，厚植核心技術，發展特殊應用領域。<br>
+                <br>●	開發獨有關鍵技術，進行專利布局，開拓市場。<br>
+                <br> ●	開發高附加價值產品，減少使用有機化學品，降低環境負擔。 
+                </p>
+        </div> 
+        <div class="indro col-12"> 
+            <h3 class="A3">先進科技的實驗室
+            <p class="A2"> ●專業研發團隊，設置儀器精良的物性、化性實驗室。<br>
+                <br> ●斥資多功能聚合pilot反應器，培植基礎研究與製造技術。<br>
+                <br>●加速開發高產值、高機能性纖維。<br>
+                <br>●與國外技術先進大廠合作，期望成為世界級的產業知識中心。
+            </p>
+        </div>
+        <div class="indro col-12"> 
+            <h3 class="A3">具體成就
+            <p class="A2">●早期研發產品：TWO-TONE Yarn、Clasen、雷雨絲等。<br>
+                <br> ●近期研發Crisper、PUFY紗種。吸濕導水功能可達市面上頂級產品水準。<br>
+                <br>●專案改善，提升紡絲速度，提高紡絲產量。<br>
+                <br>●擁有多項開發技術專利。<br>
+            </p>
+        </div>
+    
+        <h1 class="A7 col-3">專業認證</h1>
+    
+        <div class="indro"> 
+            <section class="row ">
+                <div  class="col">
+                    <h3 class="A3">品質管理系統</h3>  
+                    <img  src="IMG/集盛證照2.png">
+                </div>
+                <div class="indro col-5"> 
+                    <section class="row ">
+                        <div  class="col">
+                            <h3 class="A3">環境管理系統</h3>
+                            <img  src="IMG/集盛2.png">
+                        </div>
+                    </section>
+                </div> 
+                <section class="row ">
+                    <div  class="col">
+                        <h3 class="A3">職安管理系統</h3>
+                        <img  src="IMG/集盛3.png">
+                    </div>
+                </section>
+            </section>
+        </div>
+    
+        <div class="row">
+            <h1 class="A8 col-12 ">紡安</h1>  
+        </div>
+        <section class="row mb-5">
+            <div class="col">  
+                <img class="AA" src="IMG/紡安.PNG">
+            </div>
+            <div class="indro col"> 
+                <h3 class="A3">企業精神
+                <p class="A2">誠信—以誠待人、以信立業 <br>
+                    <br> 樸實—勤樸簡單、合理踏實<br>
+                    <br>創新—求精求變、研發創新</p>
+            </div> 
+        </section>
+    
+        <h1 class="A7 col-5">主要設備產能概況</h1>  
+        <div class="indro col-12"> 
+            <h3 class="A3">聚酯長纖絲纖維工廠
+            <p class="A2"> (1)德國Zimmer聚酯聚合設	<br>
+                <br>(2)日本Tenjin和Murata紡絲設備20線備三套	<br>
+                <br>(3)聚酯產能與產品：聚酯 聚合設備：	產能 	750T/D  切片	350T/D聚酯 紡絲設備：	FDY 	50T/DPOY	350T/D	<br>
+                <br>(4)DTY假撚設備：(4.1)日本Murata 假撚機21台 (單股及雙股車台通用.均配屬日本Murata自動落紗設備)<br>
+                 <br>(4.2)產能 3,000(噸/月<br>
+                 <br>  (5)ATY設備 (5.1)	日本Aiki 空氣加工機 12台<br>
+                 <br> (5.2)	產能 432(噸/月)
+                </p>
+        </div> 
+    
+        <h1 class="A7 col-5">主要生產產品</h1>  
+        <div class="indro col-12">
+            <h3 class="A3">銷售狀況：
+                <p class="A2"> 聚酯長纖產品，外銷約占70%，內銷占30% </p>
+            <h3 class="A3">主要產品：
+            <p class="A2"> 聚酯長纖產品，包含聚酯粒、聚酯半延伸絲、<br>
+                <br>聚酯紡延絲、聚酯加工絲，及各類特殊機能長纖紗，<br>
+                <br>如阻燃、無光、亮光、CD 、環保紗及各種DOPE-DYED色,像是黑紗…..
+                </p>
+        </div> 
+    
+        <div class="row">
+            <h1 class="A9 col-12 ">聚隆纖維</h1>  
+        </div>
+    
+        <section class="row mb-5">
+            <div class="col-12">  
+                <img class="AA" src="IMG/聚隆.jpg">
+            </div> 
+            <h1 class="A7 col">經營策略</h1> 
+            <div class="indro col-12"> 
+                <p class="A2">1.管理制度化、作業標準化、經營數據化、資訊電腦化。<br>        
+                    <br>2.應隨著市場環境變化而改變，切忌墨守成規、一成不變。<br>
+                    <br>3.微利時代應持續管控成本、以創造利潤。<br>
+                    <br>4.持續強化技術層次、深度與領先幅度。<br>
+                    <br>5.持續強化財務結構。<br>
+                    <br>6.適時以低成本擴張產能。<br>
+                    <br>7.密切與上下游廠商合作、整合個別優勢，創造合作競爭優勢。<br>
+                    <br>8.持續發展新技術，開發新產品，創造個別競爭優勢。<br>
+                    <br>9.持續強化透明度與公司治理。
+                    </p>
+            </div> 
+        </section>
+        <div class="A11">
+            <div class="card-header">
+                <a class="A10" data-toggle="collapse" href="#activity1"
+                    aria-expanded="true">
+                    經營理念
+                </a>
+            </div>
+            <div id="activity1" class="collapse">
+                <div class="indro">
+                    <p class="">
+                        <br>(1)企業經營的本質在於維持穩定的獲利，而成功的企業經營則需不斷地擁有競爭優勢，這些優勢包括<br><br>品質、成本和研發能力。<br>
+                        <br>(2)首先必須建立公司完善的管理制度(涵蓋研發、生產、銷售 及財務，也唯有嚴格的內部控制， 才能<br><br>使產品的品質穩定提昇並滿足客戶的需求)。<br>
+                        <br>(3)要落實研究 開發的工作(包括製程的改善及新產品的開發與市場商業化， 研發的落實將明顯的使產<br><br>品成本降低與售價提昇，成為企業獲利的基礎)。<br>
+                        <br>(4)是人才的培育(人才是推動企業成長與進步的命脈，未來的企業經營會是人才爭奪戰的局面， 誰擁<br><br>有人才，誰才擁有企業，而優秀人才的取得)。<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+             <br>
+        <div class="A11">
+            <div class="card-header">
+                <a class="A10" data-toggle="collapse" href="#activity2"
+                    aria-expanded="true">
+                    經營使命
+                </a>
+            </div>
+            <div id="activity2" class="collapse">
+                <div class="indro">
+                    <p class="">
+                             ----> 提供高品質。 <br>
+                        <br> ---->多樣化的纖維產品。<br>
+                        <br> ---->滿足客戶的需求。<br>
+                        <br>---->追求企業經營之穩定獲利與成長回饋員工。<br>
+                        <br>---->投資大眾及社會。
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- 頁面內容E -->
+    <script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
+    <script src="https://kit.fontawesome.com/cdc90ce112.js" crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+          
