@@ -1,0 +1,131 @@
+body {
+  background-color: white;
+}
+:root {
+  --card-color: red(241, 143, 16);
+}
+/* +++++++++++++++++++++++++ 
+    TODO:d卡片樣式
++++++++++++++++++++++++++ */
+.goopi > .card {
+  margin-bottom: 20px;
+  background-color: rgb(111, 224, 58);
+  color: var(--card-color);
+  box-shadow: rgb(202, 19, 19);
+  border-width: 10px;
+}
+.card {
+  margin-bottom: 20px;
+  background-color: rgb(74, 214, 214);
+  color: rgb(241, 143, 16);
+}
+.card-header {
+  text-align: center;
+  padding: 0;
+}
+.card-header1 {
+  text-align: center;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+}
+.card-footer {
+  text-align: center;
+  padding: 0;
+}
+.card-header .card-link {
+  font-weight: 600;
+  letter-spacing: 0.125rem;
+  text-align: center;
+  display: block;
+  padding: 10px 0px 10px 0px;
+}
+.card-footer .card-link {
+  text-align: center;
+  display: block;
+  padding: 0px;
+}
+.card-link::before {
+  content: "\f106";
+  width: 12px;
+  font-family: "Font Awesome 5 Free" !important;
+  font-weight: 900;
+  margin-right: 1rem;
+}
+.collapsed::before {
+  content: "\f103";
+  width: 12px;
+  font-family: "Font Awesome 5 Free" !important;
+  font-weight: 900;
+  margin-right: 1rem;
+}
+.sec4 a.card-link::before {
+  content: "\f106";
+  width: 12px;
+  font-family: "Font Awesome 5 Free" !important;
+  font-weight: 900;
+  margin: 0;
+}
+.sec4 a.collapsed::before {
+  content: "\f103";
+  width: 12px;
+  font-family: "Font Awesome 5 Free" !important;
+  font-weight: 900;
+  margin: 0;
+}
+.card-body {
+  text-align: center;
+}
+.card-header img {
+  width: 180px;
+  height: 150px;
+  margin: 0px 15px 0px 0px;
+}
+/* +++++++++++++++++++++++++ 
+    TODO:表格樣式
++++++++++++++++++++++++++ */
+.class1 table {
+  border: 1px solid #000;
+  font-family: 微軟正黑體;
+  font-size: 16px;
+  width: 600px;
+  border: 1px solid #000;
+  text-align: center;
+  border-collapse: collapse;
+}
+.class2 table {
+  border: 1px solid #000;
+  font-family: 微軟正黑體;
+  font-size: 16px;
+  width: 600px;
+  border: 1px solid #000;
+  text-align: center;
+  border-collapse: collapse;
+}
+.class1 th {
+  width: 300px;
+}
+.class2 th {
+  width: 600px;
+}
+.sam td {
+  height: 5px;
+}
+.baga {
+  width: 1194px;
+  height: 432px;
+  overflow: auto;
+}
+.square {
+  width: 200px;
+  height: 200px;
+  background: rgb(0, 0, 0);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.6;
+  background-image: url(https://image.taiwantoday.tw/images/content_info/img20180806160003352.jpg);
+  color: white;
+  font-size: 20px;
+  text-shadow: black;
+}
