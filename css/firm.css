@@ -40,21 +40,24 @@
   font-style: normal;
 }
 h1{
+  font-style: italic;
+  font-weight: 700;
   -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7));
     filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7));
 }
 h2{
   font-size: 3rem;
   margin-bottom: 2rem;
-  font-family: fantasy;
-  font-weight: 500;
+  font-style: italic;
+  font-weight: 700;
   line-height: 1.5;
   padding-left: 1rem;
   -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7));
     filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7));
 }
 .tex-1{
-  margin-bottom: 3rem!important;
+  margin-top: 0.3rem;
+  margin-bottom: 2rem!important;
   display: block;
 }
 .com-seat{
@@ -63,10 +66,11 @@ h2{
   padding-bottom: 3rem!important;
 }
 .com-seatcontract{
-  padding-top: 6rem!important;
+  padding-top: 1rem!important;
   padding-bottom: 6rem!important;
-  background-color: #e9f1f1;
+  background-color: #62636352;
   margin-bottom: 3rem!important;
+  
 }
 .table{
   font-style: normal;
@@ -78,7 +82,7 @@ h2{
   position: relative;
   display: flex;
   flex-direction: row;
-  background-color: #cfebd6;
+  background-color: #cccccc;
   margin-top: 3rem!important;
   margin-bottom: 3rem!important;
   padding: 2rem;
@@ -109,6 +113,8 @@ h2{
   text-align: left;
   font-size: 16px;
   background-color: #1A1A1A;
+  -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7));
+    filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7));
 }
 
 .snip1523 * {
@@ -119,7 +125,7 @@ h2{
 }
 
 .snip1523 img {
-  vertical-align: top;
+  vertical-align: middle;
   max-width: 100%;
   height: auto;
   backface-visibility: hidden;
