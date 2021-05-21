@@ -14,7 +14,7 @@
     />
     <link rel="stylesheet" href="css/Industry chain.css" />
   </head>
-  <body>   
+ <body>   
          <!-- 頁面導覽S  -->
         <ul class="nav nav-tabs" id="myTab">
           <li class="nav-item">
@@ -31,8 +31,9 @@
           </li>
           <li class="nav-item">
             <button class="nav-link" id="IP-tab" data-bs-toggle="tab" data-bs-target="#IP"
-             type="button">IP</button>
+             type="button">比較</button>
           </li>
+         
         </ul>
         <!-- 頁面導覽E  -->
         <!-- 頁面內容S  -->
@@ -64,169 +65,148 @@
           <div class="tab-pane fade" id="IC">
             <div class="container">
               <div class="row">
-              
                 <div class="col"> </div>
                 <div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom layers lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile host=\&quot;app.diagrams.net\&quot; modified=\&quot;2021-05-13T18:50:42.810Z\&quot; agent=\&quot;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36\&quot; etag=\&quot;8PKwUkdslaFVva16wcq3\&quot; version=\&quot;14.6.13\&quot; type=\&quot;google\&quot;&gt;&lt;diagram id=\&quot;X-FPsiuNETdVk2klb6QM\&quot; name=\&quot;Page-1\&quot;&gt;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&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}"></div>
                 <script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
               </div>
             </div> 
           </div>
-          <div class="tab-pane fade" id="IP">
-            <div class="container">
-              <div class="row">
-             <div class="col"> </div>
-              </div>
-            </div> 
-            <h2 class="mx-auto" style="width:200px">產業比較特點</h2>
-            <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-               
-              </div>
-            </div>
 
+        <div class="tab-pane fade" id="IP">
+          <div class="container"></div>
+          <div class="row">
+              <h1 class="A4 col-12 ">企業介紹</h1>
+              <h1 class="A6 col-4">集盛事業</h1>  
           </div>
-       </div>
-       <main class="container"> 
-        <div class="row">
-            <h1 class="A4 col-12 ">企業介紹</h1>
-            <h1 class="A6 col-12 ">集盛事業</h1>  
-        </div>
-        <section class="row mb-5">
-            <div class="col">  
-                <img class="AA" src="IMG/集盛.jfif">
-            </div>
-            <div class="indro col"> 
-                <h3 class="A3">定位
-                <p class="A2">●	建立纖維材料及工程塑膠的核心技術。<br>
-                    <br>  ●	上下游垂直整合在化纖及工程塑膠領域提供品質穩定及高值化產品滿足客戶需求。<br>
-                    <br> ●	專注本業發展，控制成本，穩健財務結構。 </p>
-            </div> 
-            <div class="indro col"> 
-                <h3 class="A3">企業規模
-                <p class="A2">3座假撚廠、1座氣撚廠<br><br>2座尼龍紡絲廠、3座尼龍聚合廠<br><br>1座複合材料廠等<br><br>共10座工廠</p>
-            </div> 
-        </section>
-        <section class="row mb-5">
-            <div  class="col">
-                <img  src="IMG/集盛圖下.PNG">
-            </div>
-            <div class="col">  
-              <img src="IMG/集盛 圖上.PNG">
-            </div>
-        </section>
-        <h1 class="A7 col-3">專注研發</h1>  
-        <div class="indro col-12"> 
-            <h3 class="A3">集盛創新研發中心
-            <p class="A2"> ●產學合作，厚植核心技術，發展特殊應用領域。<br>
-                <br>●	開發獨有關鍵技術，進行專利布局，開拓市場。<br>
-                <br> ●	開發高附加價值產品，減少使用有機化學品，降低環境負擔。 
-                </p>
-        </div> 
-        <div class="indro col-12"> 
-            <h3 class="A3">先進科技的實驗室
-            <p class="A2"> ●專業研發團隊，設置儀器精良的物性、化性實驗室。<br>
-                <br> ●斥資多功能聚合pilot反應器，培植基礎研究與製造技術。<br>
-                <br>●加速開發高產值、高機能性纖維。<br>
-                <br>●與國外技術先進大廠合作，期望成為世界級的產業知識中心。
-            </p>
-        </div>
-        <div class="indro col-12"> 
-            <h3 class="A3">具體成就
-            <p class="A2">●早期研發產品：TWO-TONE Yarn、Clasen、雷雨絲等。<br>
-                <br> ●近期研發Crisper、PUFY紗種。吸濕導水功能可達市面上頂級產品水準。<br>
-                <br>●專案改善，提升紡絲速度，提高紡絲產量。<br>
-                <br>●擁有多項開發技術專利。<br>
-            </p>
-        </div>
-    
-        <h1 class="A7 col-3">專業認證</h1>
-    
-        <div class="indro"> 
-            <section class="row ">
-                <div  class="col">
-                    <h3 class="A3">品質管理系統</h3>  
-                    <img  src="IMG/集盛證照2.png">
+          <section class="row mb-5">
+              <div class="col">  
+                  <img class="AA" src="IMG_Industry chain/集盛.jpg">
+              </div>
+              <div class="indro col"> 
+                  <h3 class="A3">定位
+                  <p class="A2">●	建立纖維材料及工程塑膠的核心技術。<br>
+                      <br>  ●	上下游垂直整合在化纖及工程塑膠領域提供品質穩定及高值化產品滿足客戶需求。<br>
+                      <br> ●	專注本業發展，控制成本，穩健財務結構。 </p>
+              </div> 
+              <div class="indro col"> 
+                  <h3 class="A3">企業規模
+                  <p class="A2">3座假撚廠、1座氣撚廠<br><br>2座尼龍紡絲廠、3座尼龍聚合廠<br><br>1座複合材料廠等<br><br>共10座工廠</p>
+              </div> 
+          </section>
+          <section class="row mb-5">
+              <div  class="col">
+                  <img  src="IMG_Industry chain/集盛圖下.PNG">
+              </div>
+              <div class="col">  
+                <img src="IMG_Industry chain/集盛 圖上.PNG">
+              </div>
+          </section>
+          <h1 class="A7 col-4"> 專注研發</h1>  
+          <div class="indro col-5"> 
+              <h3 class="A3">集盛創新研發中心
+              <p class="A2"> ●產學合作，厚植核心技術，發展特殊應用領域。<br>
+                  <br>●	開發獨有關鍵技術，進行專利布局，開拓市場。<br>
+                  <br> ●	開發高附加價值產品，減少使用有機化學品，降低環境負擔。 
+                  </p>
+          </div> 
+          <div class="indro col-5"> 
+              <h3 class="A3">先進科技的實驗室
+              <p class="A2"> ●專業研發團隊，設置儀器精良的物性、化性實驗室。<br>
+                  <br> ●斥資多功能聚合pilot反應器，培植基礎研究與製造技術。<br>
+                  <br>●加速開發高產值、高機能性纖維。<br>
+                  <br>●與國外技術先進大廠合作，期望成為世界級的產業知識中心。
+              </p>
+          </div>
+          <div class="indro col-5"> 
+              <h3 class="A3">具體成就
+              <p class="A2">●早期研發產品：TWO-TONE Yarn、Clasen、雷雨絲等。<br>
+                  <br> ●近期研發Crisper、PUFY紗種。吸濕導水功能可達市面上頂級產品水準。<br>
+                  <br>●專案改善，提升紡絲速度，提高紡絲產量。<br>
+                  <br>●擁有多項開發技術專利。<br>
+              </p>
+          </div>
+      
+          <h1 class="A7 col-3">專業認證</h1>
+      
+          <div class="indro"> 
+              <section class="row ">  
+                  <div  class="col">
+                      <h3 class="A3">品質管理系統</h3>  
+                      <div>
+                        <img  src="IMG_Industry chain/集盛證照2.png">
+                      </div>
+                  </div>
+                  <div  class="col">
+                    <h3 class="A3">環境管理系統</h3>
+                    <img  src="IMG_Industry chain/集盛2.png">
                 </div>
-                <div class="indro col-5"> 
-                    <section class="row ">
-                        <div  class="col">
-                            <h3 class="A3">環境管理系統</h3>
-                            <img  src="IMG/集盛2.png">
-                        </div>
-                    </section>
-                </div> 
-                <section class="row ">
-                    <div  class="col">
-                        <h3 class="A3">職安管理系統</h3>
-                        <img  src="IMG/集盛3.png">
-                    </div>
-                </section>
-            </section>
-        </div>
-    
-        <div class="row">
-            <h1 class="A8 col-12 ">紡安</h1>  
-        </div>
-        <section class="row mb-5">
-            <div class="col">  
-                <img class="AA" src="IMG/紡安.PNG">
-            </div>
-            <div class="indro col"> 
-                <h3 class="A3">企業精神
-                <p class="A2">誠信—以誠待人、以信立業 <br>
+                <div  class="col">
+                  <h3 class="A3">職安管理系統</h3>
+                  <img  src="IMG_Industry chain/集盛3.png">
+          </div>
+          <div class="container"></div>
+          <div class="row">
+              <h1 class="A8 col-12">紡安</h1>  
+          </div>
+          <section class="row mb-5">
+              <div class="col">  
+                  <img class="AA" src="IMG_Industry chain/紡安.PNG">
+              </div>
+              <div class="indro col"> 
+                  <h3 class="A3">企業精神
+                  <p class="A2">誠信—以誠待人、以信立業 <br>
                     <br> 樸實—勤樸簡單、合理踏實<br>
                     <br>創新—求精求變、研發創新</p>
-            </div> 
-        </section>
-    
-        <h1 class="A7 col-5">主要設備產能概況</h1>  
-        <div class="indro col-12"> 
-            <h3 class="A3">聚酯長纖絲纖維工廠
-            <p class="A2"> (1)德國Zimmer聚酯聚合設	<br>
-                <br>(2)日本Tenjin和Murata紡絲設備20線備三套	<br>
-                <br>(3)聚酯產能與產品：聚酯 聚合設備：	產能 	750T/D  切片	350T/D聚酯 紡絲設備：	FDY 	50T/DPOY	350T/D	<br>
-                <br>(4)DTY假撚設備：(4.1)日本Murata 假撚機21台 (單股及雙股車台通用.均配屬日本Murata自動落紗設備)<br>
-                 <br>(4.2)產能 3,000(噸/月<br>
-                 <br>  (5)ATY設備 (5.1)	日本Aiki 空氣加工機 12台<br>
-                 <br> (5.2)	產能 432(噸/月)
-                </p>
-        </div> 
-    
-        <h1 class="A7 col-5">主要生產產品</h1>  
-        <div class="indro col-12">
-            <h3 class="A3">銷售狀況：
-                <p class="A2"> 聚酯長纖產品，外銷約占70%，內銷占30% </p>
-            <h3 class="A3">主要產品：
-            <p class="A2"> 聚酯長纖產品，包含聚酯粒、聚酯半延伸絲、<br>
-                <br>聚酯紡延絲、聚酯加工絲，及各類特殊機能長纖紗，<br>
-                <br>如阻燃、無光、亮光、CD 、環保紗及各種DOPE-DYED色,像是黑紗…..
-                </p>
-        </div> 
-    
-        <div class="row">
-            <h1 class="A9 col-12 ">聚隆纖維</h1>  
-        </div>
-    
-        <section class="row mb-5">
-            <div class="col-12">  
-                <img class="AA" src="IMG/聚隆.jpg">
-            </div> 
-            <h1 class="A7 col">經營策略</h1> 
-            <div class="indro col-12"> 
-                <p class="A2">1.管理制度化、作業標準化、經營數據化、資訊電腦化。<br>        
-                    <br>2.應隨著市場環境變化而改變，切忌墨守成規、一成不變。<br>
-                    <br>3.微利時代應持續管控成本、以創造利潤。<br>
-                    <br>4.持續強化技術層次、深度與領先幅度。<br>
-                    <br>5.持續強化財務結構。<br>
-                    <br>6.適時以低成本擴張產能。<br>
-                    <br>7.密切與上下游廠商合作、整合個別優勢，創造合作競爭優勢。<br>
-                    <br>8.持續發展新技術，開發新產品，創造個別競爭優勢。<br>
-                    <br>9.持續強化透明度與公司治理。
-                    </p>
-            </div> 
-        </section>
-        <div class="A11">
+              </div> 
+          </section>
+          <h1 class="A7 col-5">主要設備產能概況</h1>  
+          <div class="indro"> 
+              <h3 class="A3">聚酯長纖絲纖維工廠
+              <p class="A2"> (1)德國Zimmer聚酯聚合設	<br>
+                  <br>(2)日本Tenjin和Murata紡絲設備20線備三套	<br>
+                  <br>(3)聚酯產能與產品：聚酯 聚合設備：	產能 	750T/D  切片	350T/D聚酯 紡絲設備：	FDY 	50T/DPOY	350T/D	<br>
+                  <br>(4)DTY假撚設備：(4.1)日本Murata 假撚機21台 (單股及雙股車台通用.均配屬日本Murata自動落紗設備)<br>
+                   <br>(4.2)產能 3,000(噸/月<br>
+                   <br>  (5)ATY設備 (5.1)	日本Aiki 空氣加工機 12台<br>
+                   <br> (5.2)	產能 432(噸/月)
+                  </p>
+          </div> 
+      
+          <h1 class="A7 col-5">主要生產產品</h1>  
+          <div class="indro col-12">
+              <h3 class="A3">銷售狀況：
+                  <p class="A2"> 聚酯長纖產品，外銷約占70%，內銷占30% </p>
+              <h3 class="A3">主要產品：
+              <p class="A2"> 聚酯長纖產品，包含聚酯粒、聚酯半延伸絲、<br>
+                  <br>聚酯紡延絲、聚酯加工絲，及各類特殊機能長纖紗，<br>
+                  <br>如阻燃、無光、亮光、CD 、環保紗及各種DOPE-DYED色,像是黑紗…..
+                  </p>
+          </div> 
+      
+          <div class="row-center ">
+              <h1 class="A9 col-12 ">聚隆纖維</h1>  
+          </div>
+      
+          <section class="row mb-5">
+              <div class="col-12">  
+                  <img class="AA" src="IMG_Industry chain/聚隆.jpg">
+              </div> 
+              <h1 class="A7 col-5">經營策略</h1> 
+              <div class="indro col-12 "> 
+                  <p class="A2">1.管理制度化、作業標準化、經營數據化、資訊電腦化。<br>        
+                      <br>2.應隨著市場環境變化而改變，切忌墨守成規、一成不變。<br>
+                      <br>3.微利時代應持續管控成本、以創造利潤。<br>
+                      <br>4.持續強化技術層次、深度與領先幅度。<br>
+                      <br>5.持續強化財務結構。<br>
+                      <br>6.適時以低成本擴張產能。<br>
+                      <br>7.密切與上下游廠商合作、整合個別優勢，創造合作競爭優勢。<br>
+                      <br>8.持續發展新技術，開發新產品，創造個別競爭優勢。<br>
+                      <br>9.持續強化透明度與公司治理。
+                      </p>
+              </div> 
+          </section>
+          
+          <div class="A11">
             <div class="card-header">
                 <a class="A10" data-toggle="collapse" href="#activity1"
                     aria-expanded="true">
@@ -265,15 +245,20 @@
                 </div>
             </div>
         </div>
+         <div id="SSS"></div>
+        </div>
+       
+    
+      
         <!-- 頁面內容E -->
-    <script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
-    <script src="https://kit.fontawesome.com/cdc90ce112.js" crossorigin="anonymous"></script>
-    <!-- JavaScript Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-      crossorigin="anonymous"
-    ></script>
+        <script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
+        <script src="https://kit.fontawesome.com/cdc90ce112.js" crossorigin="anonymous"></script>
+        <!-- JavaScript Bundle with Popper -->
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
   </body>
 </html>
-          
+        

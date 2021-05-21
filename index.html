@@ -1,68 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <!-- BootStrap -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-        <style>
-            .xx {
-                display: flex;
-                flex-direction: column;
-            }
-        </style>
-        <ul class="nav">
-            <li class="nav-item">
-                <a class="nav-link active" href="index.html">首頁</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="Industry.html">產業</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="Industry chain.html">產業鏈</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="Marketingstrategy.html">行銷市場</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="firm.html">企業分析</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="firm2.html">市場分析</a>
-            </li>
-        </ul>
-    </head>
-
-    <body>
-        <div class="container px-4">
-            <div class="row gx-5">
-                <div class="col-6">
-                    <div class="row gx-5">
-                        <div class="p-3 border bg-light col-3">1-1</div>
-                        <div class="p-3 border bg-light col-3">1-2</div>
-                        <div class="p-3 border bg-light col-3">1-3</div>
-                        <div class="p-3 border bg-light col-3">1-4</div>
-                    </div>
-                </div>
-                <div class="col-6 ">
-                    <div class="row gx-5 xx">
-                        <div class="p-3 border bg-light col-3">2-1</div>
-                        <div class="p-3 border bg-light col-6">2-2</div>
-                        <div class="p-3 border bg-light col-9">2-3</div>
-                        <div class="p-3 border bg-light col-12">2-4</div>
-                    </div>
-                </div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首頁</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <!-- BootStrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fs-5">
+        <div class="container">
+            <a class="navbar-brand" href="#">潘廷柏竣</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Industry.html">產業</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Industry chain.html">產業鏈</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Marketingstrategy.html">行銷市場</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="firm.html">企業分析</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="firm2.html">市場分析</a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <script src="https://kit.fontawesome.com/cdc90ce112.js" crossorigin="anonymous"></script>
-        <!-- JavaScript Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-            crossorigin="anonymous"></script>
-    </body>
+    </nav>
+    <article class="container">
+        <section class="row">
+            <div class="col">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div id="banner" class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner carousel-inner-set">
+                        <div class="carousel-item active">
+                            <img src="/img_index/p1.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img_index/p2.png" class="d-block h-100 m-auto" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev bg-dark" type="button"
+                        data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next bg-dark" type="button"
+                        data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </article>
+</head>
+
+<body>
+
+    <script src="https://kit.fontawesome.com/cdc90ce112.js" crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+</body>
 
 </html>
