@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,700;);
 body {
   background-color: white;
 }
@@ -17,8 +18,7 @@ body {
 }
 .card {
   margin-bottom: 20px;
-  background-color: rgb(74, 214, 214);
-  color: rgb(241, 143, 16);
+  background-color: rgb(26, 236, 236);
 }
 .card-header {
   text-align: center;
@@ -133,5 +133,144 @@ body {
   text-shadow: 1px 1px 1px black;
 }
 .qwer {
-  text-shadow: 0px 0px 15px rgb(102, 99, 99);
+  text-shadow: 0px 0px 25px rgb(43, 62, 92);
+}
+.polo {
+  text-shadow: -1px -1px white, 1px 1px #333;
+}
+.marblo {
+  border-left: 10px solid rgb(239, 243, 3);
+  background-color: darkgrey;
+  clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
+}
+.snip1585 {
+  background-color: rgb(41, 46, 57);
+  color: #fff;
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  margin: 10px;
+  max-width: 315px;
+  min-width: 230px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 235px;
+  height: 235px;
+  border-radius: 50%;
+  padding: 0px;
+  text-shadow: 1px 1px 1px black;
+}
+
+.snip1585 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.45s ease;
+  transition: all 0.45s ease;
+}
+
+.snip1585:before,
+.snip1585:after {
+  background-color: rgba(46, 52, 64, 0.5);
+  border-top: 50px solid rgba(46, 52, 64, 0.5);
+  border-bottom: 50px solid rgba(46, 52, 64, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  z-index: 1;
+  opacity: 0;
+}
+
+.snip1585:before {
+  -webkit-transform: scaleY(2);
+  transform: scaleY(2);
+}
+
+.snip1585:after {
+  -webkit-transform: scaleY(2);
+  transform: scaleY(2);
+}
+
+.snip1585 img {
+  backface-visibility: hidden;
+  width: 250px;
+  height: 250px;
+}
+
+.snip1585 figcaption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.1em;
+  opacity: 0;
+  z-index: 2;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  border-radius: 50%;
+}
+
+.snip1585 h3 {
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.snip1585 h3 span {
+  display: block;
+  font-weight: 700;
+}
+
+.snip1585 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  border-radius: 50%;
+}
+
+.snip1585:hover > img,
+.snip1585.hover > img {
+  opacity: 0.7;
+}
+
+.snip1585:hover:before,
+.snip1585.hover:before,
+.snip1585:hover:after,
+.snip1585.hover:after {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+.snip1585:hover figcaption,
+.snip1585.hover figcaption {
+  opacity: 1;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+.a123 {
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+    0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
+  font-size: 25px;
+}
+.a456 {
+  border-left: 10px solid rgb(239, 243, 3);
+  background-color: darkgrey;
 }
