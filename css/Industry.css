@@ -141,7 +141,6 @@ body {
 .marblo {
   border-left: 10px solid rgb(239, 243, 3);
   background-color: darkgrey;
-  clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
 }
 .snip1585 {
   background-color: rgb(41, 46, 57);
@@ -269,8 +268,145 @@ body {
     0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
     0 20px 20px rgba(0, 0, 0, 0.15);
   font-size: 25px;
+  background: -webkit-linear-gradient(
+    left,
+    rgb(235, 235, 135),
+    rgb(188, 233, 146),
+    rgb(213, 231, 193)
+  );
+}
+.a1234 {
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+    0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
+  font-size: 25px;
+  background: -webkit-linear-gradient(
+    left,
+    #ffe5fec2,
+    rgb(255, 195, 237),
+    rgb(255, 175, 248)
+  );
+}
+.a12345 {
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb,
+    0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3);
+  font-size: 25px;
+  background: -webkit-linear-gradient(
+    left,
+    #eec97ace,
+    rgb(247, 193, 77),
+    rgba(241, 173, 24, 0.925)
+  );
+}
+.a123456 {
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9;
+  font-size: 25px;
+  background: -webkit-linear-gradient(
+    left,
+    #9dedfce1,
+    rgb(17, 226, 233),
+    rgba(127, 224, 236, 0.925)
+  );
 }
 .a456 {
-  border-left: 10px solid rgb(239, 243, 3);
-  background-color: darkgrey;
+  border-bottom: 5px solid rgb(0, 0, 0);
+  color: brown;
+}
+.ss::before {
+  content: "\f0e3";
+  height: 100px;
+  width: 100px;
+  font-size: 60px;
+  font-family: "Font Awesome 5 Free";
+}
+i.fa-gavel {
+  height: 100px;
+  width: 100px;
+  font-size: 60px;
+}
+.zxc h3 {
+  text-align: center;
+  font-family: KaiTi;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9;
+}
+.dd12 {
+  border-right: 10px solid rgb(247, 66, 42);
+  padding-right: 20px;
+  margin-right: 10px;
+}
+i.fa-acquisitions-incorporated {
+  height: 100px;
+  width: 100px;
+  font-size: 60px;
+}
+i.fa-coins {
+  height: 100px;
+  width: 100px;
+  font-size: 60px;
+}
+.asd144 {
+  height: 10px;
+  width: 100%;
+  display: block;
+  background: -webkit-linear-gradient(
+    left,
+    rgb(3, 3, 3),
+    rgb(126, 126, 124),
+    rgb(2, 2, 2)
+  );
+}
+.asdasdasd {
+  height: 100px;
+  width: 100%;
+  border-left: 100px solid transparent;
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid rgba(0, 0, 0, 0.7);
+  border-right: 100px solid transparent;
+}
+.ghj::after {
+  content: "";
+  height: 0px;
+  width: 100%;
+  border-left: 400px solid transparent;
+  border-top: 130px solid transparent;
+  border-bottom: 100px solid rgba(122, 121, 121, 0.5);
+  border-right: 400px solid transparent;
+  position: relative;
+  bottom: 200px;
+}
+.ddd12 {
+  border-right: 10px solid rgb(247, 66, 42);
+  padding-right: 115px;
+  margin-right: 10px;
+}
+.vbn {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+}
+.vbn {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+}
+.vbn img {
+  width: 600px;
+  height: 300px;
+}
+.gggg {
+  background: -webkit-linear-gradient(
+    left,
+    rgb(253, 253, 253),
+    rgb(233, 233, 233),
+    rgb(155, 155, 155)
+  );
+}
+.qqw {
+  background-color: whitesmoke;
+}
+.gd {
+  background-color: whitesmoke;
 }

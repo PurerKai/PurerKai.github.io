@@ -1,0 +1,42 @@
+.A0 {
+  display: block;
+  height: 100 px;
+  background-color: rgb(88, 88, 88);
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  font-style: normal;
+  text-align: center;
+  text-shadow: 1px 1px white, -1px -1px #444;
+}
+.A1 {
+  font-size: 40px;
+  font-weight: bold;
+  text-shadow: 0 0 0.2em #87f, 0 0 0.2em rgb(146, 228, 214);
+}
+.A2 {
+  font-family: "微軟正黑體";
+  font-size: 30px;
+  font-weight: bold;
+  text-align: left;
+  text-shadow: 1em 1em 1em black;
+}
+.A3 {
+  width: 1200px;
+  height: 350px;
+}
+.A4 {
+  text-shadow: 0 0 0.6em rgb(209, 148, 6), 0 0 0.2em rgb(170, 197, 16);
+  font-size: 50px;
+  font-weight: bold;
+  text-align: left;
+}
+.shape-ex1 {
+  width: 1300px;
+  display: block;
+  line-height: 100px;
+  display: block;
+  text-align: left;
+  background-color: white (200, 199, 199);
+  color: rgb(3, 3, 3);
+  text-shadow: 0 0 0.2em rgb(32, 21, 21);
+}
