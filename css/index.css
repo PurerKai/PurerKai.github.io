@@ -1,14 +1,4 @@
-.banner {
-    height: 600px;
-    width: auto;
-}
-
-.banner img {
-    max-height: inherit;
-    width: auto;
-}
-
-.next,.prev {
+/* .next,.prev {
     width: 40px;
     height: 40px;
     position: absolute;
@@ -40,5 +30,103 @@
 .xxx img{
     width:100%;
     height:auto;
+} */
+.bg-01 {
+    background: -webkit-linear-gradient(top, rgb(187, 187, 187) 80%, rgb(255, 232, 232) 90%);
 }
 
+.bg-01-1 {
+    background: rgb(110, 110, 110);
+    height: 50px;
+}
+
+.about-img {
+    margin-left: 100px;
+    transform: translateY(-20px);
+}
+
+.about-img img {
+    width: 400px;
+}
+
+.about-img img {
+    box-shadow: 5px 5px 5px black,
+        -50px 0px 20px rgba(0, 0, 0, 0.6),
+        50px 0px 20px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+.about-text {
+    font-size: 25px;
+}
+
+b.about {
+    border-bottom: black 5px solid;
+    color: black;
+}
+
+.info-box {
+    background: -webkit-linear-gradient(top, rgb(255, 232, 232) 0%, rgb(219, 219, 219, 0.8) 10%, white 100%);
+}
+
+.info-box div {
+    position: relative;
+}
+
+.info-box div img {
+    width: 100%;
+    height: 100%;
+}
+
+.info-box div img+div {
+    width: calc(100% + -20px);
+    height: calc(100% + -20px);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgb(219, 219, 219, 0.8);
+}
+
+.customized-box h1 {
+    background: -webkit-linear-gradient(top, white 0%, rgb(144, 224, 248) 50%, white 100%);
+}
+
+.subo-card {
+    border: black solid 3px;
+    height: 400px;
+    word-break: break-all;
+    text-align: center;
+    font-weight: 900;
+    position: relative;
+    font-size: 24px;
+    background-color:rgba(255, 255, 255, 0.445);
+    margin:0px 2px 0px 2px;
+}
+
+.subo-card:after {
+    content: '';
+    width:100%;
+    height:100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url(../img_index/bg01.jpg) no-repeat;
+    background-size: cover;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+.subo-card h3 {
+    border-bottom: 3px solid black;
+}
+
+.title-1 {
+    color: white;
+    background: rgba(0, 0, 0, 0.8);
+    border: 10px solid gray;
+}
+
+.end div div {
+    border: 5px solid gray;
+    margin: 0;
+}
