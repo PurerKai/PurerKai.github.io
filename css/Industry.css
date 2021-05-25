@@ -314,6 +314,7 @@ body {
 .a456 {
   border-bottom: 5px solid rgb(0, 0, 0);
   color: brown;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9;
 }
 .ss::before {
   content: "\f0e3";
@@ -331,6 +332,7 @@ i.fa-gavel {
   text-align: center;
   font-family: KaiTi;
   text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9;
+  color: green;
 }
 .dd12 {
   border-right: 10px solid rgb(247, 66, 42);
@@ -353,9 +355,9 @@ i.fa-coins {
   display: block;
   background: -webkit-linear-gradient(
     left,
-    rgb(3, 3, 3),
-    rgb(126, 126, 124),
-    rgb(2, 2, 2)
+    rgb(175, 255, 129),
+    rgb(242, 255, 53),
+    rgb(175, 255, 129)
   );
 }
 .asdasdasd {
@@ -386,22 +388,19 @@ i.fa-coins {
   width: 300px;
   height: 300px;
   border-radius: 20px;
-}
-.vbn {
-  width: 300px;
-  height: 300px;
-  border-radius: 20px;
+  border-right-color: violet;
 }
 .vbn img {
-  width: 600px;
+  width: 500px;
   height: 300px;
+  box-shadow: 10px 10px 1px black;
 }
 .gggg {
   background: -webkit-linear-gradient(
-    left,
+    top,
     rgb(253, 253, 253),
-    rgb(233, 233, 233),
-    rgb(155, 155, 155)
+    rgb(243, 243, 243),
+    rgb(223, 222, 222)
   );
 }
 .qqw {
@@ -409,4 +408,6 @@ i.fa-coins {
 }
 .gd {
   background-color: whitesmoke;
+  border: rgb(78, 68, 68);
+  border: width 10px;
 }
