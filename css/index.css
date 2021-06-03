@@ -1,7 +1,27 @@
+nav{
+    padding: 0px!important;
+}
+.active{
+    border-bottom:5px solid rgb(184, 104, 0);
+}
 .navbar-brand{
     text-justify: center;
     font-size:44px;
     margin-left: 40px;
+    margin-right: 40px;
+    font-weight: 900;
+}
+.navbar-nav{
+    width:100%;
+    display: flex;
+    flex-grow: 1;
+}
+.navbar-nav li{
+    flex-grow: 1;
+    text-align: center;
+    font-size:40px;
+    font-weight: 900;
+    border-right:1px solid white;
 }
 .next,.prev {
     width: 80px;
