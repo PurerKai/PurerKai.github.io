@@ -1,3 +1,8 @@
+.navbar-brand{
+    text-justify: center;
+    font-size:44px;
+    margin-left: 40px;
+}
 .next,.prev {
     width: 80px;
     height: 80px;
