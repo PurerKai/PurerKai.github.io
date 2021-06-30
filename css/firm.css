@@ -141,45 +141,7 @@ h1{
   -webkit-transform: rotate(0);
   transform: rotate(0);
 }
-/* swot */
-.table{
-  font-style: normal;
-  font-size: 24px;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-} 
-.t1{
-  border: 1px solid steelblue;
-  width: 100%;
-  border-collapse: collapse;
-}
-.t1 td{
-  border: 1px solid steelblue;
-  color: rgb(145, 183, 214);
-}
-.l1{
-  background-color: #d5d6ff;
-  text-align: center;
-  padding: 10px 10px 10px 10px;
-  margin: 10px 5px 10px 5px;
-  border: 5px;
-  border-color: #f55e07;
-  border-style: solid;
-  font-style: normal;
-  font-size: 24px;
-}
-.l2{
-  font-style: normal;
-  font-size: 24px;
-  background-color: #ebebeb;
-  text-align: center;
-  height: 350px;
-  padding: 10px 10px 10px 10px;
-  margin: 7px 5px 7px 5px;
-  border: 3px;
-  border-color: #dbdbdb;
-  border-style: solid;
-}
+
 /* 策略聯盟 */
 .loock{
   position: relative;
@@ -220,6 +182,8 @@ h1{
   position: relative;
   overflow: hidden;
   margin: 10px;
+  min-width: 290px;
+  min-height: 290px;
   width: 390px;
   height: 330px;
   color: #ffffff;
@@ -230,6 +194,10 @@ h1{
   background-color: #1A1A1A;
   -webkit-filter: drop-shadow(14px 14px 8px rgba(0, 0, 0, 0.959));
     filter: drop-shadow(14px 14px 8px rgba(0, 0, 0, 0.959));
+}
+
+.snip1523{
+  transform: translateX(80px);
 }
 
 .snip1523 * {
@@ -308,7 +276,7 @@ h1{
   top: auto;
   left: 20px;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   margin-top: 3rem!important;
   margin-bottom: 3rem!important;
   padding: 2rem;
@@ -326,6 +294,49 @@ h1{
   filter: blur(3px);
   margin: 1rem 0 5rem 0;
 
+}
+
+/* swot */
+.table{
+  font-style: normal;
+  font-size: 24px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding: 10px 0 10px 130px;
+  border: 3px;
+  border-style: solid;
+  border-color: #000000;
+  filter: drop-shadow(20px 20px 8px rgba(0, 0, 0, 0.4));
+} 
+.table td,
+.table th {
+  border: 3px;
+  border-style: solid;
+  border-color: #000000;
+  padding: 5px;
+}
+.l1{
+  background-color: #d5d6ff;
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+  margin: 10px 5px 10px 5px;
+  border: 4px;
+  border-color: #b0d5ff;
+  border-style: solid;
+  font-family: serif;
+  font-size: 28px;
+}
+.l2{
+  font-style: normal;
+  font-size: 24px;
+  background-color: #ebebeb;
+  text-align: center;
+  height: 350px;
+  padding: 10px 10px 10px 10px;
+  margin: 7px 5px 7px 5px;
+  border: 3px;
+  border-color: #dbdbdb;
+  border-style: solid;
 }
 /* 目標市場CSS */
 .firm2{
@@ -451,7 +462,7 @@ h1{
   background-color: #000000;
   color: #ffffff;
   text-align: center;
-  font-size: 24px;
+  font-size: 32px;
   border-style: solid;
   border-color: #000;
   border-radius: 20px;
@@ -512,4 +523,10 @@ h1{
 .snip1580:hover h5,
 .snip1580.hover h5 {
   color: rgb(27, 27, 27);
+}
+.snip1580 p{
+  font-size: 24px;
+  line-height: 1.5rem;
+  font-family: serif;
+  
 }
