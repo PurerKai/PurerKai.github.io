@@ -1,8 +1,11 @@
+/******************
+      導覽列設計
+******************/
 nav{
     padding: 0px!important;
 }
 .active{
-    border-bottom:5px solid rgb(184, 104, 0);
+    border-bottom:5px solid rgb(240, 149, 121);
 }
 .navbar-brand{
     text-justify: center;
@@ -10,19 +13,25 @@ nav{
     margin-left: 40px;
     margin-right: 40px;
     font-weight: 900;
+}.navbar>.container-fluid{
+    padding: 0;;
 }
 .navbar-nav{
     width:100%;
     display: flex;
     flex-grow: 1;
+    
 }
 .navbar-nav li{
     flex-grow: 1;
     text-align: center;
-    font-size:40px;
+    font-size:30px;
     font-weight: 900;
-    border-right:1px solid white;
+    border-right:1px solid rgba(0, 0, 0, 0.4);
 }
+/******************
+      banner
+******************/
 .next,.prev {
     width: 80px;
     height: 80px;
@@ -69,18 +78,23 @@ nav{
     width:100vw;
     max-width :100%;
     height:calc(100vh - 80px);
-    color:white;
 }
 .banner-box img{
     width:100%;
     height:100%;
     top: 0;
     left: 0;
-}
-.banner-box h1{
     position: relative;
-    bottom: 0px;
 }
+.box2 div{
+    z-index: 2;
+    width:100%;
+    height:100%;
+    position: absolute;
+    color: rgb(0, 0, 0);
+}
+
+
 .bg-01 {
     background: -webkit-linear-gradient(top, rgb(187, 187, 187) 80%, rgb(255, 232, 232) 90%);
 }
@@ -114,9 +128,13 @@ b.about {
     border-bottom: black 5px solid;
     color: black;
 }
+.gbye>hr{
+    height: 5px;
+    background: -webkit-linear-gradient(left, rgb(250, 250, 250) 25%, rgba(253, 2, 2, 0.8) 26%, rgba(253, 2, 2, 0.8) 50%, rgba(253, 2, 2, 0.8) 74%, rgb(252, 252, 252)75%);
+}
 
 .info-box {
-    background: -webkit-linear-gradient(top, rgb(255, 232, 232) 0%, rgb(219, 219, 219, 0.8) 10%, white 100%);
+    background: -webkit-linear-gradient(top, rgb(255, 232, 232) 0%, rgb(219, 219, 219, 0.8) 30%, white 100%);
 }
 
 .info-box div {
@@ -160,10 +178,20 @@ b.about {
     position: absolute;
     top: 0px;
     left: 0px;
-    background: url(../img_index/bg01.jpg) no-repeat;
-    background-size: cover;
     filter: blur(5px);
     z-index: -1;
+}
+.subo-card:nth-child(1)::after{
+    background: url(../img_index/unknown.png) no-repeat;
+     background-size: cover;
+}
+.subo-card:nth-child(2)::after{
+    background: url(../img_index/1625297125935.jpeg) no-repeat;
+     background-size: cover;
+}
+.subo-card:nth-child(3)::after{
+    background: url(../img_index/1625297149229.jpeg) no-repeat;
+     background-size: cover;
 }
 
 .subo-card h3 {
