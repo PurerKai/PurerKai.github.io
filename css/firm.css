@@ -1,18 +1,26 @@
-.firm1{
+@import "navbar.css";
+.firm1 {
   position: relative;
 }
-.fungan img{
+.fungan img {
   width: 100%;
   height: 50vh;
-  background:linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0.7) 20%, rgba(255,255,255,0.4) 37%, rgba(255,255,255, 0.8) 65%, gray 100%);
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0.7) 20%,
+    rgba(255, 255, 255, 0.4) 37%,
+    rgba(255, 255, 255, 0.8) 65%,
+    gray 100%
+  );
 }
-h1{
+h1 {
   font-size: 60px;
-  font-family:serif;
+  font-family: serif;
   font-weight: 600;
   filter: drop-shadow(15px 15px 7px rgba(0, 0, 0, 0.6));
 }
-.wo-2{
+.wo-2 {
   position: absolute;
   top: 90px;
   left: 680px;
@@ -28,7 +36,7 @@ h1{
   -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7));
   filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7));
 }
-.wo-3{
+.wo-3 {
   width: 30%;
   position: absolute;
   top: 140px;
@@ -39,7 +47,7 @@ h1{
   padding: 0;
   margin: 0;
 }
-.tex-1 h2{
+.tex-1 h2 {
   text-align: center;
   font-size: 60px;
   margin-bottom: 2rem;
@@ -48,30 +56,37 @@ h1{
   line-height: 1.5;
   padding-left: 1rem;
   -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7));
-    filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7));
+  filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7));
 }
-.tex-1{
+.tex-1 {
   margin-top: 0.3rem;
-  margin-bottom: 2rem!important;
+  margin-bottom: 2rem !important;
   display: block;
 }
 
-.com-seat{
+.com-seat {
   background-color: white;
-  padding-top: 3rem!important;
-  padding-bottom: 3rem!important;
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
 }
 /* 分析 */
-.com-seatcontract{
-  padding-top: 1rem!important;
-  padding-bottom: 1rem!important;
+.com-seatcontract {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
   background-color: #eeeeeed5;
-  margin-bottom: 2rem!important;
-  background:linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(255,255,255,0.7) 25%, rgba(255,255,255,0.4) 50%, rgba(255,255,255, 0.8) 75%, rgb(182, 182, 182) 100%);
+  margin-bottom: 2rem !important;
+  background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0.7) 25%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0.8) 75%,
+    rgb(182, 182, 182) 100%
+  );
 }
 
 .snip1484 {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   position: relative;
   overflow: hidden;
   margin: 5px 5px 5px 60px;
@@ -119,7 +134,7 @@ h1{
   margin: 0;
 }
 .snip1484 h2 {
-  font-family: 'Cardo', serif;
+  font-family: "Cardo", serif;
   display: inline-block;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -143,13 +158,13 @@ h1{
 }
 
 /* 策略聯盟 */
-.loock{
+.loock {
   position: relative;
   display: flex;
   flex-direction: row;
   background-color: rgb(221, 216, 210);
 }
-.loock p{
+.loock p {
   position: absolute;
   left: 53%;
   top: 35px;
@@ -160,25 +175,25 @@ h1{
   padding-left: 20px;
   border-left: solid rgb(153, 153, 153);
 }
-.loock img{
+.loock img {
   width: 50%;
   height: auto;
   position: relative;
   margin: 2rem;
-  padding-right: 2rem ;
+  padding-right: 2rem;
   left: 0;
   -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7));
-    filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7));
+  filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7));
 }
-.XDD:active{
+.XDD:active {
   transform: scale(1.5);
   position: relative;
   top: 25px;
-  left:25%;
-  z-index:5;
+  left: 25%;
+  z-index: 5;
 }
 .snip1523 {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   position: relative;
   overflow: hidden;
   margin: 10px;
@@ -191,12 +206,12 @@ h1{
   font-size: 16px;
   border-radius: 15px;
   border-color: #747474;
-  background-color: #1A1A1A;
+  background-color: #1a1a1a;
   -webkit-filter: drop-shadow(14px 14px 8px rgba(0, 0, 0, 0.959));
-    filter: drop-shadow(14px 14px 8px rgba(0, 0, 0, 0.959));
+  filter: drop-shadow(14px 14px 8px rgba(0, 0, 0, 0.959));
 }
 
-.snip1523{
+.snip1523 {
   transform: translateX(80px);
 }
 
@@ -210,7 +225,7 @@ h1{
 .snip1523 img {
   vertical-align: middle;
   backface-visibility: hidden;
-  width:390px;
+  width: 390px;
   height: 330px;
   border-radius: 10px;
 }
@@ -237,17 +252,17 @@ h1{
 
 .snip1523 h2,
 .snip1523 h3 {
-  font-family: 'Slabo 27px', serif;
+  font-family: "Slabo 27px", serif;
   line-height: 1.6em;
 }
 
 .snip1523 h2 {
   font-size: 2.2em;
-  color: #35ADF9;
+  color: #35adf9;
 }
 
 .snip1523 h3 {
-  color: #EBEBEB;
+  color: #ebebeb;
   font-size: 1.3em;
   font-weight: normal;
   letter-spacing: 1px;
@@ -271,21 +286,21 @@ h1{
   -webkit-transform: translateX(0%);
   transform: translateX(0%);
 }
-.fig-content{
+.fig-content {
   position: absolute;
   top: auto;
   left: 20px;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 3rem!important;
-  margin-bottom: 3rem!important;
+  margin-top: 3rem !important;
+  margin-bottom: 3rem !important;
   padding: 2rem;
 }
-.fig{
+.fig {
   background-image: url("../IMG_firm/blur.jpg");
   height: 500px;
 }
-.fig-blur{
+.fig-blur {
   float: left;
   width: 100%;
   background-repeat: no-repeat;
@@ -293,11 +308,10 @@ h1{
   background-size: cover;
   filter: blur(3px);
   margin: 1rem 0 5rem 0;
-
 }
 
 /* swot */
-.table{
+.table {
   font-style: normal;
   font-size: 24px;
   margin-top: 3rem;
@@ -307,7 +321,7 @@ h1{
   border-style: solid;
   border-color: #000000;
   filter: drop-shadow(20px 20px 8px rgba(0, 0, 0, 0.4));
-} 
+}
 .table td,
 .table th {
   border: 3px;
@@ -315,7 +329,7 @@ h1{
   border-color: #000000;
   padding: 5px;
 }
-.l1{
+.l1 {
   background-color: #d5d6ff;
   text-align: center;
   padding: 10px 10px 10px 10px;
@@ -326,7 +340,7 @@ h1{
   font-family: serif;
   font-size: 28px;
 }
-.l2{
+.l2 {
   font-style: normal;
   font-size: 24px;
   background-color: #ebebeb;
@@ -339,29 +353,29 @@ h1{
   border-style: solid;
 }
 /* 目標市場CSS */
-.firm2{
+.firm2 {
   position: relative;
 }
-.v00{
+.v00 {
   position: relative;
   margin: 50px 0 100px 0;
-  background-color:  rgba(226, 237, 239, 0.5);
+  background-color: rgba(226, 237, 239, 0.5);
   border: 1px;
-  border-color:  rgba(226, 237, 239, 0.5);
+  border-color: rgba(226, 237, 239, 0.5);
   border-style: solid;
   border-radius: 50px;
   box-sizing: border-box;
   filter: drop-shadow(30px 30px 10px rgba(0, 0, 0, 0.7));
 }
-.v1-text h4{
+.v1-text h4 {
   font-weight: 900;
   font-style: normal;
   font-size: 60px;
 }
-.v1-text h4{
+.v1-text h4 {
   transform: translateX(100px) translateY(80px);
 }
-.v1-text p{
+.v1-text p {
   padding: 10px 20px 10px 15px;
   font-style: normal;
   line-height: 1.5;
@@ -370,10 +384,10 @@ h1{
   font-weight: 600;
   align-items: center;
 }
-.v1-text p{
+.v1-text p {
   transform: translateX(40px) translateY(120px);
 }
-.v1-1{
+.v1-1 {
   background-color: white;
   border: 8px;
   border-color: #797979a4;
@@ -383,30 +397,30 @@ h1{
   filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7));
   filter: blur(1px);
 }
-.v1-1{
+.v1-1 {
   transform: translateY(50px);
 }
-.i1{
-  transform: translateX(50PX);
+.i1 {
+  transform: translateX(50px);
 }
-.i2{
+.i2 {
   transform: translateX(100px);
 }
-.v2{
+.v2 {
   position: relative;
   width: 100%;
 }
-.v5-image{
+.v5-image {
   box-sizing: border-box;
   width: 80%;
 }
-.v5-image img{
+.v5-image img {
   width: 135%;
   height: 250px;
   padding: 10px 25px 10px 10px;
   margin: 5px 0 5px 0;
 }
-.culmarket{
+.culmarket {
   position: relative;
   width: 96%;
   height: auto;
@@ -418,13 +432,13 @@ h1{
   border-color: rgba(216, 216, 216, 0);
   filter: drop-shadow(15px 15px 7px rgba(0, 0, 0, 0.7));
 }
-.ddd1{
+.ddd1 {
   position: relative;
   display: flex;
   flex-direction: row;
   padding: 10px 8px 10px 8px;
 }
-.ddd1 img{
+.ddd1 img {
   width: 300px;
   height: 300px;
   margin: auto;
@@ -435,7 +449,7 @@ h1{
   border-color: rgba(216, 216, 216, 0);
   filter: drop-shadow(15px 15px 7px rgba(0, 0, 0, 0.7));
 }
-.snip-text h2{
+.snip-text h2 {
   position: relative;
   font-style: normal;
   font-size: 45px;
@@ -443,7 +457,7 @@ h1{
   -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7));
   filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7));
 }
-.snip-text h4{
+.snip-text h4 {
   position: relative;
   font-style: normal;
   font-size: 45px;
@@ -453,11 +467,11 @@ h1{
   filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7));
 }
 .snip1580 {
-  font-family: 'Raleway', Arial, sans-serif;
+  font-family: "Raleway", Arial, sans-serif;
   position: relative;
   display: inline-block;
   overflow: hidden;
-  margin-left: 2.5rem!important;
+  margin-left: 2.5rem !important;
   width: 45%;
   background-color: #000000;
   color: #ffffff;
@@ -524,9 +538,8 @@ h1{
 .snip1580.hover h5 {
   color: rgb(27, 27, 27);
 }
-.snip1580 p{
+.snip1580 p {
   font-size: 24px;
   line-height: 1.5rem;
   font-family: serif;
-  
 }
