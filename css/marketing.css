@@ -277,7 +277,15 @@ i.fa-coins {
 .fgh {
   background-color: rgb(129, 129, 129);
 }
+.d456{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
 .d456 img {
   height: 200px;
   width: 200px;
+}
+.d456.know{
+  background-color:rgb(92, 193, 240);
 }
