@@ -1,147 +1,14 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,700;);
-body {
-  background-color: white;
+@import "navbar.css";
+/******************
+      行銷手法
+******************/
+.title-1 {
+  color: brown;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9;
+  border-bottom: 5px solid rgb(0, 0, 0);
 }
-:root {
-  --card-color: red(241, 143, 16);
-}
-/* +++++++++++++++++++++++++ 
-    TODO:d卡片樣式
-+++++++++++++++++++++++++ */
-.goopi > .card {
-  margin-bottom: 20px;
-  background-color: rgb(251, 252, 250);
-  color: var(--card-color);
-  box-shadow: rgb(202, 19, 19);
-  border-width: 10px;
-  border-color: deeppink;
-}
-.card {
-  margin-bottom: 20px;
-  background-color: rgb(26, 236, 236);
-}
-.card-header {
-  text-align: center;
-  padding: 0;
-}
-.card-header1 {
-  text-align: center;
-  padding: 0;
-  background-color: rgb(255, 255, 255);
-}
-.card-footer {
-  text-align: center;
-  padding: 0;
-}
-.card-header .card-link {
-  font-weight: 600;
-  letter-spacing: 0.125rem;
-  text-align: center;
-  display: block;
-  padding: 10px 0px 10px 0px;
-}
-.card-footer .card-link {
-  text-align: center;
-  display: block;
-  padding: 0px;
-}
-.card-link::before {
-  content: "\f106";
-  width: 12px;
-  font-family: "Font Awesome 5 Free" !important;
-  font-weight: 900;
-  margin-right: 1rem;
-}
-.collapsed::before {
-  content: "\f103";
-  width: 12px;
-  font-family: "Font Awesome 5 Free" !important;
-  font-weight: 900;
-  margin-right: 1rem;
-}
-.sec4 a.card-link::before {
-  content: "\f106";
-  width: 12px;
-  font-family: "Font Awesome 5 Free" !important;
-  font-weight: 900;
-  margin: 0;
-}
-.sec4 a.collapsed::before {
-  content: "\f103";
-  width: 12px;
-  font-family: "Font Awesome 5 Free" !important;
-  font-weight: 900;
-  margin: 0;
-}
-.card-body {
-  text-align: center;
-}
-.card-header img {
-  width: 180px;
-  height: 150px;
-  margin: 0px 15px 0px 0px;
-}
-/* +++++++++++++++++++++++++ 
-    TODO:表格樣式
-+++++++++++++++++++++++++ */
-.class1 table {
-  border: 1px solid rgb(0, 0, 0);
-  font-family: 微軟正黑體;
-  font-size: 16px;
-  width: 600px;
-  border: 1px solid #000;
-  text-align: center;
-  border-collapse: collapse;
-  border-color: deeppink;
-}
-.class2 table {
-  border: 1px solid #000;
-  font-family: 微軟正黑體;
-  font-size: 16px;
-  width: 546px;
-  border: 1px solid #000;
-  text-align: center;
-  border-collapse: collapse;
-  border-color: deeppink;
-}
-.class1 th {
-  width: 300px;
-}
-.sam th {
-  width: 300px;
-}
-.sam td {
-  height: 10px;
-}
-.baga {
-  width: 1194px;
-  height: 432px;
-  overflow: auto;
-}
-.square {
-  width: 200px;
-  height: 200px;
-  background: rgb(0, 0, 0);
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0.6;
-  background-image: url(https://image.taiwantoday.tw/images/content_info/img20180806160003352.jpg);
-  color: white;
-  font-size: 20px;
-  text-shadow: 1px 1px 1px black;
-}
-.qwer {
-  text-shadow: 0px 0px 25px rgb(43, 62, 92);
-}
-.polo {
-  text-shadow: -1px -1px white, 1px 1px #333;
-}
-.marblo {
-  border-left: 10px solid rgb(239, 243, 3);
-  background-color: darkgrey;
-}
+
 .snip1585 {
   background-color: rgb(41, 46, 57);
   color: #fff;
@@ -160,7 +27,6 @@ body {
   padding: 0px;
   text-shadow: 1px 1px 1px black;
 }
-
 .snip1585 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -261,6 +127,35 @@ body {
   -webkit-transition-delay: 0.1s;
   transition-delay: 0.1s;
 }
+/******************
+    電商平台屬性
+******************/
+.back::after {
+  content: "";
+  height: 0px;
+  width: 100%;
+  border-left: 400px solid transparent;
+  border-top: 130px solid transparent;
+  border-bottom: 100px solid rgba(122, 121, 121, 0.5);
+  border-right: 400px solid transparent;
+  position: relative;
+  bottom: 200px;
+}
+span.span1 {
+  height: 10px;
+  width: 100%;
+  display: block;
+  background: -webkit-linear-gradient(
+    left,
+    rgb(175, 255, 129),
+    rgb(242, 255, 53),
+    rgb(175, 255, 129)
+  );
+}
+/******************
+    XXXXXXXXXXX
+******************/
+
 .a123 {
   text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
     0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
@@ -311,11 +206,7 @@ body {
     rgba(127, 224, 236, 0.925)
   );
 }
-.a456 {
-  border-bottom: 5px solid rgb(0, 0, 0);
-  color: brown;
-  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9;
-}
+
 .ss::before {
   content: "\f0e3";
   height: 100px;
@@ -349,17 +240,7 @@ i.fa-coins {
   width: 100px;
   font-size: 60px;
 }
-.asd144 {
-  height: 10px;
-  width: 100%;
-  display: block;
-  background: -webkit-linear-gradient(
-    left,
-    rgb(175, 255, 129),
-    rgb(242, 255, 53),
-    rgb(175, 255, 129)
-  );
-}
+
 .asdasdasd {
   height: 100px;
   width: 100%;
@@ -368,17 +249,7 @@ i.fa-coins {
   border-bottom: 100px solid rgba(0, 0, 0, 0.7);
   border-right: 100px solid transparent;
 }
-.ghj::after {
-  content: "";
-  height: 0px;
-  width: 100%;
-  border-left: 400px solid transparent;
-  border-top: 130px solid transparent;
-  border-bottom: 100px solid rgba(122, 121, 121, 0.5);
-  border-right: 400px solid transparent;
-  position: relative;
-  bottom: 200px;
-}
+
 .ddd12 {
   border-right: 10px solid rgb(247, 66, 42);
   padding-right: 115px;
@@ -395,14 +266,6 @@ i.fa-coins {
   height: 300px;
   box-shadow: 10px 10px 1px black;
 }
-.gggg {
-  background: -webkit-linear-gradient(
-    top,
-    rgb(253, 253, 253),
-    rgb(243, 243, 243),
-    rgb(223, 222, 222)
-  );
-}
 .qqw {
   background-color: whitesmoke;
 }
@@ -414,7 +277,15 @@ i.fa-coins {
 .fgh {
   background-color: rgb(129, 129, 129);
 }
+.d456{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
 .d456 img {
   height: 200px;
   width: 200px;
+}
+.d456.know{
+  background-color:rgb(92, 193, 240);
 }
