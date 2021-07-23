@@ -43,18 +43,18 @@ h1 {
   display: flex;
   flex-direction: row;
 }
-.cstp li{
-  font-size: 27px;
-  font-family: sans-serif;
+.cstp p{
+  font-size: 36px;
+  font-family: cursive;
   line-height: 1.8em;
+  width: auto;
+  padding: 70px;
 }
-.cstp{
-  transform: translateX(170px);
-}
+
 .trafig {
   font-family: 'Fauna One', Arial, sans-serif;
   position: relative;
-  margin: 10px 20px;
+  margin: 10px 20px 10px 30px;
   min-width: 530px;
   max-width: 700px;
   min-height: 520px;
@@ -67,9 +67,7 @@ h1 {
   filter: drop-shadow(18px 18px 9px rgba(0, 0, 0, 0.7));
   z-index: 1;
 }
-.trafig{
-  transform: translateX(150px);
-}
+
 .trafig * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -82,21 +80,23 @@ h1 {
   top: 50%;
   opacity: 1;
   width: 700px;
-  height: 500px;
+  height: 530px;
   -webkit-transform: translate(0%, -50%);
   transform: translate(0%, -50%);
 }
 .trafig figcaption {
   position: absolute;
-  width: 50%;
+  width: 62%;
   top: 25%;
   left: 0;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-25%);
+  transform: translateY(-25%);
   padding: 20px 0 20px 20px;
+  text-align: center;
+  font-size: 34px;
+  line-height: 1.8em;
 }
-.trafig h2,
-.trafig p {
+.trafig h2{
   margin: 0;
   width: 100%;
   -webkit-transform: translateX(20px);
@@ -106,12 +106,9 @@ h1 {
 .trafig h2 {
   font-family: 'Playfair Display', Arial, sans-serif;
   text-transform: uppercase;
-  font-size: 32px;
+  font-weight: 700;
+  font-size: 44px;
   margin-bottom: 16px;
-}
-.trafig p {
-  font-size: 1.5em;
-  font-size: 27px;
 }
 .trafig:hover img,
 .trafig.hover img {
