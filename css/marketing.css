@@ -291,4 +291,6 @@ i.fa-coins {
 }
 .tab {
   position: absolute;
+  height: auto;
+  width: 100%;
 }
