@@ -1,4 +1,11 @@
 @import "navbar.css";
+.head01{
+    background: url(../panpan/banner01.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+
+}
 .banner .banner-box{
     width:100%;
     height:550px;
@@ -14,4 +21,21 @@
 }
 .head01{
     font-size:2em
+}
+.style01{
+    border-bottom:black 3px solid;
+}
+.list-group-item:hover{
+    background-color: #007bff;
+}
+.img-box{
+    width:auto;
+    height:300px;
+    border: black 3px solid;
+    border-radius: 5%;
+}
+.img-box img{
+    width:100%;
+    height:100%;
+    border-radius: 5%;
 }
