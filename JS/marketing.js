@@ -1,4 +1,4 @@
-var x
+
 $(".d456").click(function (e) {
     $(".d456").removeClass("know")
     $(this).addClass("know")
