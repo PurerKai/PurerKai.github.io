@@ -1,0 +1,35 @@
+@import "navbar.css";
+/*
+    背景圖跟背景遮罩還有高度
+*/
+.headnew1 {
+  background-image: url(../IMG_pp/潘上面.jpeg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.2);
+  background-blend-mode: multiply;
+  min-height: 500px;
+}
+.bca {
+  border-bottom: black 3px solid;
+}
+/*
+    進出口分析
+*/
+.ha20 {
+  border-bottom: black 3px solid;
+}
+.ha21 {
+  font-size: 20px;
+}
+.go1 img {
+  width: 1370px;
+  height: auto;
+}
+/*
+    近期趨勢 跟早期統計分析
+*/
+.csgo {
+  color: red;
+}

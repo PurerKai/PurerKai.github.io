@@ -240,6 +240,11 @@ i.fa-coins {
   width: 100px;
   font-size: 60px;
 }
+i.fa-poll {
+  height: 100px;
+  width: 100px;
+  font-size: 60px;
+}
 
 .asdasdasd {
   height: 100px;
@@ -293,10 +298,6 @@ i.fa-coins {
   position: absolute;
   height: auto;
   width: 100%;
-}
-.fas {
-  height: 100px;
-  width: 100px;
 }
 .bcw {
   background-color: rgb(79, 195, 248);
