@@ -3,9 +3,9 @@
     背景圖跟背景遮罩還有高度
 */
 .headnew1 {
-  background-image: url(../IMG_pp/潘上面.jpeg);
-  background-size: cover;
-  background-position: center center;
+  background-image: url(../IMG_pp1/潘上面.jpg);
+  background-size:cover;
+  background-position:center;
   background-repeat: no-repeat;
   background-color: rgba(255, 255, 255, 0.2);
   background-blend-mode: multiply;
@@ -32,4 +32,15 @@
 */
 .csgo {
   color: red;
+}
+.go1 img{
+  width: 100%;
+  height: auto;
+}
+.font-1{
+  font-size: 1.4em;
+  font-weight: bold;
+}
+.bom0{
+  border-bottom: black 3px solid;
 }
