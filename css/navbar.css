@@ -36,6 +36,7 @@ nav {
 }
 .aaaa:hover ul {
   display: block;
+  width:100%;
 }
 .use {
   border-left: 10px solid rgb(240, 149, 121);
