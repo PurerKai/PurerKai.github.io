@@ -1,8 +1,8 @@
 @import "navbar.css";
 .headnew1 {
-  background-image: url(../IMG_pp1/潘上面.jpg);
-  background-size:cover;
-  background-position:center;
+  background-image: url(../IMG_pp/banner.png);
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   background-color: rgba(255, 255, 255, 0.2);
   background-blend-mode: multiply;
@@ -11,23 +11,23 @@
 .bca {
   border-bottom: black 3px solid;
 }
-.img1 div{
-    width: 100%;
-    height: 200px;
+.img1 div {
+  width: 100%;
+  height: 200px;
 }
-.img1 div img{
-    width: 100%;
-    height: 200px;
+.img1 div img {
+  width: 100%;
+  height: 200px;
 }
-.img-box div img{
-    width: 100%;
-    height: 300px;
+.img-box div img {
+  width: 100%;
+  height: 300px;
 }
-.img-2 .img-box div img{
-    width: 100%;
-    height: 200px;
+.img-2 .img-box div img {
+  width: 100%;
+  height: 200px;
 }
-footer img{
-    width: 100%;
-    height: 450px;
+footer img {
+  width: 100%;
+  height: 450px;
 }

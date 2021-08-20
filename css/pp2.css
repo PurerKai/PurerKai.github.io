@@ -3,7 +3,7 @@
     背景圖跟背景遮罩還有高度
 */
 .headnew1 {
-  background-image: url(../IMG_pp/潘上面.jpeg);
+  background-image: url(../IMG_pp/banner.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
