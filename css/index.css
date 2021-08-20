@@ -60,15 +60,12 @@
   position: absolute;
   top: 90px;
   margin-left: 60px;
-  font-size: 20px;
+  font-size: 2em;
   font-weight: 700;
 }
 .banner-box:nth-child(1) + div > h1 {
   border-bottom: 3px solid black;
   margin-bottom: 40px;
-}
-.fung {
-  font-size: 100px;
 }
 /******************
       content

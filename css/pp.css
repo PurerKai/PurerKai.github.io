@@ -43,3 +43,6 @@
 .b-box .img-box {
   margin-bottom: 30px;
 }
+.img-box + div p {
+  font-size: 1.4em;
+}
