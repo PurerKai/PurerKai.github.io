@@ -6,15 +6,16 @@
 .title-1 {
   color: brown;
   text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9;
-  border-bottom: 5px solid rgb(0, 0, 0);
 }
-
+.mark01 {
+  border-bottom: black 3px solid;
+}
 .snip1585 {
   background-color: rgb(41, 46, 57);
   color: #fff;
   display: inline-block;
   font-family: "Roboto", sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   margin: 10px;
   max-width: 315px;
   min-width: 230px;
@@ -31,7 +32,7 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-transition: all 0.45s ease;
-  transition: all 0.45s ease;
+  transition: all 0.65s ease;
 }
 
 .snip1585:before,
@@ -136,7 +137,7 @@
   width: 100%;
   border-left: 400px solid transparent;
   border-top: 130px solid transparent;
-  border-bottom: 100px solid rgba(122, 121, 121, 0.5);
+  border-bottom: 100px solid rgba(180, 180, 180, 0.5);
   border-right: 400px solid transparent;
   position: relative;
   bottom: 200px;
@@ -155,7 +156,9 @@ span.span1 {
 /******************
     XXXXXXXXXXX
 ******************/
-
+.tqc {
+  font-size: 20px;
+}
 .a123 {
   text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
     0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
@@ -206,7 +209,9 @@ span.span1 {
     rgba(127, 224, 236, 0.925)
   );
 }
-
+.add45 {
+  background-color: rgb(236, 236, 236);
+}
 .ss::before {
   content: "\f0e3";
   height: 100px;
@@ -219,11 +224,12 @@ i.fa-gavel {
   width: 100px;
   font-size: 60px;
 }
-.zxc h3 {
+.zxc {
   text-align: center;
   font-family: KaiTi;
   text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9;
   color: green;
+  font-size: 45px;
 }
 .dd12 {
   border-right: 10px solid rgb(247, 66, 42);
@@ -278,6 +284,10 @@ i.fa-poll {
   background-color: whitesmoke;
   border: rgb(78, 68, 68);
   border: width 10px;
+  font-size: 20px;
+}
+.busy {
+  border-bottom: 5px solid black;
 }
 .fgh {
   background-color: rgb(129, 129, 129);
@@ -292,7 +302,7 @@ i.fa-poll {
   width: 200px;
 }
 .d456.know {
-  background-color: rgb(92, 193, 240);
+  background-color: white;
 }
 .tab {
   position: absolute;
@@ -302,4 +312,37 @@ i.fa-poll {
 .fas {
   height: 100px;
   width: 100px;
+}
+.apg {
+  font-size: 18px;
+}
+.anq1 {
+  background-color: rgb(248, 226, 226);
+  border-radius: 10px;
+}
+.anq2 {
+  background-color: rgb(211, 243, 240);
+  border-radius: 10px;
+}
+.pbb1 {
+  background: linear-gradient(whitesmoke, rgb(211, 243, 240));
+  font-size: 20px;
+  border-radius: 10px;
+}
+.pbb {
+  background: linear-gradient(whitesmoke, rgb(248, 226, 226));
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+span.span2 {
+  height: 10px;
+  width: 100%;
+  display: block;
+  background: -webkit-linear-gradient(
+    left,
+    rgb(110, 230, 180),
+    rgb(116, 236, 230),
+    rgb(110, 230, 180)
+  );
 }
