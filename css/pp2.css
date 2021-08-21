@@ -17,10 +17,70 @@
 /*
     棉紗產品系列
 */
-.ha20 {
-  border-bottom: black 3px solid;
+.content img {
+  width: 100%;
 }
-.aol img {
-  width: 400px;
+.next,
+.prev {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  display: none;
+  padding: 0;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  z-index: 100;
+}
+.next {
+  border-radius: 10px 0px 0px 10px;
+  right: 15px;
+}
+.prev {
+  left: 15px;
+  border-radius: 0px 10px 10px 0px;
+}
+.next:focus,
+.prev:focus {
+  background: rgba(0, 0, 0, 1);
+}
+.slick-dots {
+  bottom: 20px;
+}
+.slick-dots li button:before {
+  font-size: 20px;
+  line-height: 20px;
+}
+.slick-dotted.slick-slider {
+  margin: 0px;
+}
+.commodity img {
+  width: 100%;
   height: auto;
+}
+.click {
+  position: relative;
+}
+.click:after {
+  content: "\f0a7";
+  position: absolute;
+  line-height: 80px;
+  width: 80px;
+  height: 80px;
+  color: black;
+  font-size: 40px;
+  font-family: "Font Awesome 5 Free" !important;
+  font-weight: 400;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  margin: 0;
+  text-align: center;
 }
