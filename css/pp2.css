@@ -80,7 +80,18 @@
   font-weight: 400;
   bottom: 50%;
   left: 50%;
-  transform: translate(-50%, 50%);
   margin: 0;
   text-align: center;
+  animation: jump 1s infinite;
+}
+@keyframes jump {
+  from {
+    transform: translate(-50%, 50%);
+  }
+  to {
+    transform: translate(-50%, 55%);
+  }
+}
+.jfo {
+  border-radius: 10px;
 }
