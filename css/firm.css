@@ -16,7 +16,7 @@
 }
 h1 {
   font-size: 60px;
-  font-family: serif;
+  font-family: cursive;
   font-weight: 600;
   filter: drop-shadow(15px 15px 7px rgba(0, 0, 0, 0.6));
 }
@@ -47,7 +47,7 @@ h1 {
   position: relative;
   width: 630px;
   height: 480px;
-  margin: 0 0 0 70px;
+  margin: 0 0 0 90px;
   filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7));
 }
 .cstp p{
@@ -72,7 +72,7 @@ h1 {
   position: absolute;
   left: 53%;
   top: 160px;
-  font-family: serif;
+  font-family: cursive;
   font-size: 27px;
   font-weight: 700;
   text-align: left;
@@ -99,10 +99,7 @@ h1 {
 .odm,
 .oem {
   position: relative;
-  min-width: 160px;
-  min-height: 160px;
-  max-width: 470px;
-  max-height: 430px;
+  width: 33.3%;
   color: rgb(0, 0, 0);
   text-align: left;
   margin: 0 7px 0 7px ;
@@ -116,7 +113,7 @@ h1 {
 }
 
 .obm h2,.odm h2,.oem h2 {
-  font-family: "Slabo 27px", serif;
+  font-family: cursive;
   line-height: 1.6em;
   margin: 5px 0 0 0 ;
 }
@@ -183,14 +180,14 @@ h1 {
 }
 .bde{
   font-size: 46px;
-  font-family: serif;
+  font-family: cursive;
   text-align: center;
 }
 .t0{
   text-align: center;
 }
 .table{
-  font-style: normal;
+  font-family: cursive;
   font-size: 24px;
   margin-top: 1rem;
   margin-bottom: 3rem;
@@ -216,11 +213,11 @@ h1 {
   border: 4px;
   border-color: #b0d5ff;
   border-style: solid;
-  font-family: serif;
+  font-family: cursive;
   font-size: 28px;
 }
 .l2 {
-  font-style: normal;
+  font-family: cursive;
   font-size: 24px;
   background-color: #ebebeb;
   text-align: center;
@@ -246,7 +243,7 @@ h1 {
 #tab-swot > ul > li{ 
   display:inline-block; 
   vertical-align:top;
-  font-family:'微軟正黑體';
+  font-family:cursive;
   text-align: center;
   font-size: 34px; 
   margin:0 0 -1px 0 ; 
@@ -292,7 +289,7 @@ h1 {
 }
 .v1-text h4 {
   font-weight: 900;
-  font-style: normal;
+  font-style: solid;
   font-size: 60px;
 }
 .v1-text h4 {
@@ -300,7 +297,7 @@ h1 {
 }
 .v1-text p {
   padding: 10px 20px 10px 15px;
-  font-style: normal;
+  font-family: cursive;
   line-height: 1.5;
   word-wrap: break-word;
   font-size: 26px;
@@ -382,7 +379,7 @@ h1 {
 }
 .snip-text h2 {
   position: relative;
-  font-style: normal;
+  font-family: cursive;
   font-size: 45px;
   color: rgb(10, 10, 10);
   -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7));
@@ -390,87 +387,34 @@ h1 {
 }
 .snip-text h4 {
   position: relative;
-  font-style: normal;
+  font-family: cursive;
   font-size: 45px;
   text-align: right;
   color: rgb(10, 10, 10);
   -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7));
   filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7));
 }
-.snip1580 {
-  font-family: "Raleway", Arial, sans-serif;
-  position: relative;
-  display: inline-block;
-  overflow: hidden;
-  margin-left: 2.5rem !important;
-  width: 45%;
-  background-color: #000000;
-  color: #ffffff;
-  text-align: center;
-  font-size: 32px;
-  border-style: solid;
-  border-color: #000;
-  border-radius: 20px;
-  -webkit-filter: drop-shadow(15px 15px 8px rgba(0, 0, 0, 0.8));
-  filter: drop-shadow(15px 15px 8px rgba(0, 0, 0, 0.8));
+.m3{
+  margin: 10px 0 2rem 0;
 }
-.snip1580 * {
-  -webkit-transition: all 1s;
-  transition: all 1s;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-.snip1580 img {
+.m3 img{
   width: 100%;
-  height: 100%;
-  vertical-align: top;
+  height: 340px;
 }
-.snip1580 figcaption {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 20px;
-  border: 5px;
-  border-radius: 20px;
-  border-style: solid;
-  border-color: rgb(0, 0, 0);
-  background-color: rgba(255, 255, 255, 0);
-}
-.snip1580 h3 {
+.m3 h2{
+  font-family: cursive;
   font-size: 36px;
-  font-weight: 600;
-  line-height: 20px;
-  margin: 3px 0 3px 0;
-  padding: 5px 5px 5px 5px;
-  font-family: serif;
+  text-align: center;
 }
-.snip1580 h5 {
-  font-family: serif;
+.m3 p{
+  font-family: cursive;
   font-size: 30px;
-  font-weight: 500;
-  margin: 0;
-  color: white;
-  letter-spacing: 1px;
-  line-height: 1.4em;
+  text-align: center;
 }
-.snip1580:hover figcaption,
-.snip1580.hover figcaption {
-  top: 20px;
-  left: 20px;
-  right: 20px;
-  bottom: 20px;
-  background-color: rgba(235, 235, 235, 0.952);
-}
-.snip1580:hover h3,
-.snip1580.hover h3,
-.snip1580:hover h5,
-.snip1580.hover h5 {
-  color: rgb(27, 27, 27);
-}
-.snip1580 p {
-  font-size: 24px;
-  line-height: 1.5rem;
-  font-family: serif;
+.m4{
+  width: 50%;
+  margin: 0 14px 0 14px;
+  background-color: white;
+  filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7));
+  
 }
