@@ -28,6 +28,9 @@
   padding: 0px;
   text-shadow: 1px 1px 1px black;
 }
+.snip1585:hover {
+  transform: scale(1.2) translateY(0px);
+}
 .snip1585 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
