@@ -1,4 +1,6 @@
-var a = $(".commodity")
+var a = $(".commodity");
+var number;
+
 $(a).slick({
     dots: true,
     autoplay: true,
@@ -10,3 +12,51 @@ $(a).slick({
                     <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
                     </svg></button>`
 });
+$(".click").click(function (e) {
+    $(".bigimg").removeClass("hide");
+    dobig = 'IMG_pp2/'+$(this).data('img')+'.jpeg';
+    number = $(this).data('index');
+    console.log("現在是"+number);
+    $("#bigimg").attr('src',dobig);
+});
+
+$(".fork").click(function (e) {
+    $(".bigimg").addClass("hide");
+});
+
+$(".prevx").click(function (e) {
+    console.log("上一張");
+    --number;
+    if (number == 0) {
+        number = 3;
+        dobig=$("#down").attr('src');
+        $("#bigimg").attr('src',dobig);
+    }
+    else if (number == 2) {
+        dobig=$("#middle").attr('src');
+        $("#bigimg").attr('src',dobig);;
+    }
+    else if (number == 1) {
+        dobig=$("#up").attr('src');
+        $("#bigimg").attr('src',dobig);
+    }
+});
+
+$(".nextx").click(function (e) {
+    console.log("下一張");
+    ++number;
+    if (number == 4) {
+        number = 1;
+        dobig=$("#up").attr('src');
+    $("#bigimg").attr('src',dobig);
+    }
+    if (number == 2) {
+        dobig=$("#middle").attr('src');
+    $("#bigimg").attr('src',dobig);
+    }
+    if (number == 3) {
+        dobig=$("#down").attr('src');
+    $("#bigimg").attr('src',dobig);
+    }
+});
+
