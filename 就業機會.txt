@@ -1,0 +1,11 @@
+職務名稱:軟體設計工程師、Internet程式設計師、網頁設計師
+公司名稱:大塊系統工程股份有限公司
+所需專長:網頁技術類：ReactJS, GatsbyJS, Typescript, GraphQL, Grafana/Kibana Plugin。
+伺服器(Server)：Python Flask/Django/Dash, Nginx/IIS 。
+軟體開發類：PWA漸進式網頁設計。
+資料庫設計類：Postgresql/MySQL/MSSQL, Elasticsearch, Cassandra/Hbase 。
+程式設計類：Python, Java、Scala 。
+薪資:待遇面議
+網址:https://www.104.com.tw/job/6rjvj?jobsource=jolist_a_relevance
+需修課程:MySQL/MSSQL
+Python/Java/Scala 以上課程皆看應徵哪類來學習
