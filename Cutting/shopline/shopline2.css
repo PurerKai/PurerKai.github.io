@@ -1,5 +1,5 @@
 html{
-    font-size: 18px;
+    font-size: 16px;
 }
 a{
     text-decoration: none;
@@ -8,34 +8,16 @@ h1,h2{
     font-weight:bolder;
     line-height: 1.5;
 }
-h1{
-    font-size:3rem;
-}
-body,section,div,ul,li,a,p,h1,h2{
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-}
-h2{
-    font-size:2rem;
-}
 /* TODO header-top樣式 */
 header{
     height: 124px;
     width: 100%;
-    position:fixed;
-    top:0px;
-    left:0px;
-    z-index: 200;
 }
 .header-top{
     height: 40px;
     padding: 0px 100px 0px;
     background-color: #00142D;
     color: #fff;
-    display: flex;
-    justify-content:flex-end;
-    align-items:center;
 }
 .header-top button{
     padding-right: 20px;
@@ -58,18 +40,10 @@ header{
     background-color: #fff;
     box-shadow: 0 2px 12px 0 rgba(36,50,66,0.075);
     z-index: 100;
-    display:flex;
-    justify-content: center;
-    align-items: center
 }
 .header-map ul{
-    width:100%;
     margin:0px;
     padding-left: 65px;
-    display:flex;
-    justify-content: flex-start;
-    align-items: center;
-    list-style:none;
 }
 .header-map li{
     height:inherit;
@@ -112,20 +86,19 @@ header{
     content: "\f077"
 }
 .nav-btn{
-    min-width: 120px;
+    min-width: 100px;
     color:#fff;
     background-color: #0061FF;
     border-radius: 30px;
     margin: 0;
-    padding: 12px 17px 12px;
-    text-align: center;
+    padding: 8px 17px 8px;
 }
 .nav-btn:hover{
     color:#fff;
     background-color:#0747A6;
 }
 /* TODO banner樣式 */
-.banner-box{
+section:first-of-type{
     background: url(img/bg1.png) no-repeat center/auto 100%;
     background-size:100% 100%;
     width: 100%;
@@ -134,22 +107,9 @@ header{
     padding: 0px 100px 0px;
     color:#fff;
     font-weight:bolder;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
-.banner-text,.banner{
-    width: 50%;
-    padding-right: 20px;
-}
-.banner-text h1{
-    font-size:3rem;
 }
 .banner-text h1+p{
     font-size:1.2rem;
-}
-.banner-text h1,.banner-text h1+p{
-    margin-bottom:20px;
 }
 .text-G{
     color:#00C66A;
@@ -162,7 +122,6 @@ header{
     border-width: 0 0 1px;
     border-radius: 0;
     color: #fff;
-    font-size: 1.1rem;
 }
 .mail-btn{
     min-width: 120px;
@@ -172,7 +131,6 @@ header{
     margin: 0 0 0 20px;
     padding: 8px 17px 8px;
     border:none;
-    font-size: 1.1rem;
 }
 .banner img{
     width: 100%;
@@ -182,31 +140,17 @@ header{
 .home-intro{
     padding: 100px 200px 0px;
 }
-.home-intro h2{
-    font-size:2rem;
-    margin-bottom: 20px;
-}
 .home-intro p{
     font-size:1.1em;
     line-height:1.8;
-    margin-bottom: 20px;
 }
 .intro-title{
     margin-bottom:120px;
-    display:flex;
-    flex-flow:column;
-    justify-content: center;
-    text-align: center;
 }
 .home-intro-box{
     padding-bottom: 100px;
     margin-bottom:100px;
     border-bottom: 1px solid #E0E5E9;
-    display:flex;
-}
-.home-intro-box:last-of-type{
-    margin-bottom: 0px;
-    flex-direction: row-reverse;
 }
 .home-intro-box img{
     width: 100%;
@@ -218,9 +162,6 @@ header{
 .home-intro-box ul{
     padding:0;
     list-style: none;
-    display:flex;
-    margin-bottom: 15px;
-    flex-flow:row wrap ;
 }
 .home-intro-box li{
     width: 50%;
@@ -241,28 +182,9 @@ header{
     background-color:rgb(244, 245, 247);
     padding:75px 50px 25px;
 }
-.home-mores h2{
-    margin-bottom:50px;
-    font-size:2rem;
-    text-align:center;
-}
-.home-mores h3{
-    font-size:1.8rem;
-    text-align:center;
-    margin-bottom: 5px;
-    font-weight: 400;
-}
-.home-mores p{
-    text-align:center;
-    margin-bottom: 5px;
-}
 .home-mores ul{
     list-style: none;
     padding:0;
-    display:flex;
-    flex-flow: row wrap;
-    justify-content:center;
-    margin-bottom:16px;
 }
 .home-mores li{
     width: 300px;
@@ -289,10 +211,6 @@ header{
 .home-shop{
     padding: 70px 130px;
 }
-.home-shop h2{
-    text-align: center;
-    margin-bottom:20px;
-}
 .home-shop h2>span{
     color:#0061FF;
 }
@@ -300,10 +218,6 @@ header{
     list-style: none;
     border-bottom: 1px solid  grey;
     padding:0;
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-bottom:20px;
 }
 .home-shop li{
     width:calc(100% / 5);
@@ -323,22 +237,10 @@ header{
     width:auto;
     height: 80px;
 }
-.showcase-content{
-    display:flex;
-    margin-bottom:30px;
-}
 .showcase-content div:first-child{
     padding-right: 30px;
     font-weight: 500;
     position: relative;
-}
-.showcase-content span{
-    position: absolute;
-    bottom:0px;
-    left: 0px;
-}
-.content-text p{
-    margin-top:30px;
 }
 /* TODO footer樣式 */
 footer>div{
@@ -353,7 +255,6 @@ footer>div{
 .footer-map h2{
     color: #fff;
     line-height:1.8;
-    margin-bottom:40px;
 }
 .footer-map img{
     position:absolute;
@@ -400,10 +301,6 @@ footer>div{
     color: rgba(255,255,255,0.4);
     margin-bottom: 8px;
 }
-.footer-nav{
-    display: flex;
-    justify-content: space-between;
-}
 .covid-19{
     display: inline-block;
     width: 225px;
@@ -419,11 +316,6 @@ footer>div{
 }
 #footer-bottom{
     padding-bottom: 30px;
-    display:flex;
-    justify-content:space-between;
-}
-#footer-bottom ul{
-    display:flex;
 }
 #footer-bottom li a{
     color: #fff;
@@ -431,9 +323,6 @@ footer>div{
 }
 #footer-bottom li:not(:first-child) a{
     border-left: 1px #fff solid;
-}
-.button-group{
-    display: flex;
 }
 .button-group a{
     width: 40px;
@@ -460,9 +349,6 @@ footer>div{
     right:20px;
     bottom:20px;
     z-index: 201;
-    display:flex;
-    justify-content: center;
-    align-items: center;
 }
 .message svg{ 
     width: 32px;

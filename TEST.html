@@ -1,36 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .wrap{
-            width: 600px;
-            height: 600px;
-            background: grey;
+        div{
             display: flex;
-            flex-flow: row;
-            justify-content:center;
-            align-content: center;
+            flex: 1 0;
+            height:80px;
+            align-items: center;
+            background-color: grey;
         }
-        .item{
-            width: 150px;
-            height: 100px;
-            background: #f00;
-            color: #fff;
-            font-size: 50px;
-            margin: 4px;
+        ul{
+            display: flex;
+            flex: 1 0;
+            align-items: center;
+            list-style: none;
+            background-color: red;
         }
-        .first{
-            height: 200px;
+        ul>li{
+            margin-left: 30px;
         }
     </style>
 </head>
+
 <body>
-    <div class="wrap">
-        <div class="item first"></div>
+
+    <div>
+        <img src="https://picsum.photos/300/80/?random=10">
+        <ul>
+            <li><a href="#">aaa</a></li>
+            <li><a href="#">bbb</a></li>
+            <li><a href="#">ccc</a></li>
+            <li><a href="#">ddd</a></li>
+        </ul>
+        <a href="#">12345</a>
     </div>
 </body>
+
 </html>
