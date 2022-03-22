@@ -215,20 +215,20 @@ section:first-of-type h1+p{
     content: "\f00c";
 } */
 /* 5 */
-.home-features{
+.home-mores{
     background-color:rgb(244, 245, 247);
     padding:75px 50px 25px;
 }
-.home-features ul{
+.home-mores ul{
     list-style: none;
     padding:0;
 }
-.home-features li{
+.home-mores li{
     width: 300px;
     margin:0px 60px 60px;
     text-align:center;
 }
-.home-features div{
+.home-mores div{
     width: 120px;
     height: 120px;
     border-radius: 50%;
@@ -239,23 +239,23 @@ section:first-of-type h1+p{
     justify-content: center;
     align-items: center;
 }
-.home-features div img{
+.home-mores div img{
     width: 60%;
     height: auto;
 }
 /* 6 */
-.home-showcase{
+.home-shop{
     padding: 70px 130px;
 }
-.home-showcase h2>span{
+.home-shop h2>span{
     color:#0061FF;
 }
-.home-showcase ul{
+.home-shop ul{
     list-style: none;
     border-bottom: 1px solid  grey;
     padding:0;
 }
-.home-showcase li{
+.home-shop li{
     width:calc(100% / 5);
     display:flex;
     flex-direction: row;
@@ -263,13 +263,13 @@ section:first-of-type h1+p{
     padding-bottom: 30px;
     border-bottom: 3px solid  transparent;
 }
-.home-showcase li:hover,.home-showcase li.click{
+.home-shop li:hover,.home-shop li.click{
     border-color: #0061FF;
 }
-.home-showcase li:hover img,.home-showcase li.click img{
+.home-shop li:hover img,.home-shop li.click img{
     background-color:rgba(0, 97, 255,0.4);
 }
-.home-showcase li img{
+.home-shop li img{
     width:auto;
     height: 80px;
 }
