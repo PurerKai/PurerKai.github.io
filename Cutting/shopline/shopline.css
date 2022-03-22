@@ -1,5 +1,5 @@
-*{
-    font-size: 1em;
+html{
+    font-size: 16px;
 }
 a{
     text-decoration: none;
@@ -278,11 +278,6 @@ section:first-of-type h1+p{
     font-weight: 500;
     position: relative;
 }
-.showcase-content div:first-child span{
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-}
 /* 7 */
 footer>div{
     padding:50px 130px 0px;
@@ -354,7 +349,6 @@ footer>div{
 }
 .covid-19 a{
     color: rgb(0, 0, 0);
-
 }
 #footer-bottom{
     padding-bottom: 30px;
