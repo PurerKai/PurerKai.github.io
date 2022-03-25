@@ -137,7 +137,7 @@ header>div,header>nav{
     background-color:#0747A6;
 }
 /* tag banner樣式 */
-.banner-box{
+.banner{
     background: url(img/bg1.png) no-repeat center/auto 100%;
     background-size:100% 100%;
     width: 100%;
@@ -150,7 +150,7 @@ header>div,header>nav{
     justify-content: center;
     align-items: center;
 }
-.banner-box>div{
+.banner>div{
     width: 50%;
 }
 .banner-text{
@@ -186,8 +186,8 @@ header>div,header>nav{
     width: 100%;
     height:auto;
 }
-/* tag home-intro樣式 */
-.home-intro{
+/* tag intro樣式 */
+.intro{
     padding: 100px 200px 0px;
 } 
 .intro-title{
@@ -197,37 +197,37 @@ header>div,header>nav{
     justify-content: center;
     text-align: center;
 }
-.home-intro-box{
+.intro-box{
     margin-bottom:100px;
     padding-bottom: 100px;
     border-bottom: 1px solid #E0E5E9;
     display:flex;
 }
-.home-intro-box:nth-child(2n+1){
+.intro-box:nth-child(2n+1){
     flex-direction: row-reverse;
 }
-.home-intro-box:last-of-type{
+.intro-box:last-of-type{
     margin-bottom: 0px;
 }
-.home-intro-box-img img{
+.intro-box-img img{
     width: 100%;
     height: auto;
 }
-.home-intro-box-text,.home-intro-box-img{
+.intro-box-text,.intro-box-img{
     width: 50%;
 }
-.home-intro-box ul{
+.intro-box ul{
     list-style: none;
     display:flex;
     margin-bottom: 15px;
     flex-flow:row wrap;
 }
-.home-intro-box li{
+.intro-box li{
     width: 50%;
     margin-bottom: 5px;
     font-weight: 500;
 }
-.home-intro-box li::before{
+.intro-box li::before{
     content: "\f00c";
     width:inherit;
     height: inherit;
@@ -238,41 +238,41 @@ header>div,header>nav{
     color:#005EFF;
     border-radius: 50%;
 }
-.home-intro-box:last-of-type{
+.intro-box:last-of-type{
     margin-bottom: 0px;
 }
-/* tag home-mores樣式 */
-.home-mores{
+/* tag mores樣式 */
+.mores{
     background-color:rgb(244, 245, 247);
     padding:75px 50px 25px;
 }
-.home-mores h2{
+.mores h2{
     margin-bottom:50px;
     text-align: center;
 }
-.home-mores h3{
+.mores h3{
     font-size:1.8rem;
     text-align:center;
     margin-bottom: 5px;
     font-weight: 400;
 }
-.home-mores p{
+.mores p{
     text-align:center;
     margin-bottom: 5px;
 }
-.home-mores ul{
+.mores ul{
     list-style: none;
     display:flex;
     flex-flow: row wrap;
     justify-content:center;
     margin-bottom:16px;
 }
-.home-mores li{
+.mores li{
     width: 300px;
     margin:0px 60px 60px;
     text-align:center;
 }
-.home-mores-card{
+.mores-box{
     width: 120px;
     height: 120px;
     border-radius: 50%;
@@ -283,22 +283,22 @@ header>div,header>nav{
     justify-content: center;
     align-items: center;
 }
-.home-mores-card img{
+.mores-box img{
     width: 60%;
     height: auto;
 }
-/* tag home-shop樣式 */
-.home-shop{
+/* tag shop樣式 */
+.shop{
     padding: 70px 130px;
 }
-.home-shop h2{
+.shop h2{
     text-align: center;
     margin-bottom:20px;
 }
-.home-shop h2>span{
+.shop h2>span{
     color:#0061FF;
 }
-.home-shop ul{
+.shop ul{
     list-style: none;
     border-bottom: 1px solid  grey;
     padding:0;
@@ -307,7 +307,7 @@ header>div,header>nav{
     justify-content: center;
     margin-bottom:20px;
 }
-.home-shop li{
+.shop li{
     width:calc(100% / 5);
     display:flex;
     flex-direction: row;
@@ -315,13 +315,13 @@ header>div,header>nav{
     padding-bottom: 30px;
     border-bottom: 3px solid  transparent;
 }
-.home-shop li:hover,.home-shop li.click{
+.shop li:hover,.shop li.click{
     border-color: #0061FF;
 }
-.home-shop li:hover img,.home-shop li.click img{
+.shop li:hover img,.shop li.click img{
     background-color:rgba(0, 97, 255,0.4);
 }
-.home-shop li img{
+.shop li img{
     width:auto;
     height: 80px;
 }
