@@ -1,0 +1,139 @@
+:root{
+    --box-head_width:360px;
+    --box-head-h1_height:65px;
+    --box_width:960px;
+}
+html{
+    font-size:16px;
+}
+html,body,section,div,h1,h2,h3,h4,p{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+h1{
+    font-size:3rem;
+    font-weight:100;
+    text-align:center;
+    width:100%;
+}
+h2{
+    font-weight:700;
+}
+p{
+    font-size:1.1rem;
+}
+/* tag 外盒 */
+.box{
+    width: var(--box_width);
+    position: relative;
+    margin: 100px auto 0px;
+}
+/* tag 上区块 */
+.box-head{
+    width:var(--box-head_width);
+    position: absolute;
+    color: #fff;
+    z-index: 3;
+}
+.box:nth-child(odd) .box-head{
+    top: 0px;
+    left: 0px;
+}
+.box:nth-child(even) .box-head{
+    top: 0px;
+    right: 0px;
+}
+.box-head h1{
+    background-color:rgb(199, 4, 4);
+    height: var(--box-head-h1_height);
+}
+.box-head-text{
+    background-color:black;
+    padding: 15px;
+}
+.box-head-text p{
+    margin:10px 0px 50px;
+}
+
+/* tag 图片区块 */
+.box-img{
+    position:relative;
+    top: var(--box-head-h1_height);
+    z-index: 2;
+}
+.box:nth-child(odd) .box-img{
+    left: calc(var(--box-head_width)/2);
+}
+.box:nth-child(even) .box-img{
+    left: 0px;
+}
+/* tag 阴影区块 */
+.box-grey{
+    width: 450px;
+    height: 400px;
+    background-color: rgba(128, 128, 128, 0.1);
+    position:absolute;
+    top: 20px;
+    z-index: 1;
+}
+.box:nth-child(odd) .box-grey{
+    right: 0px;
+}
+.box:nth-child(even) .box-grey{
+    right: calc(var(--box-head_width)/2);
+}
+/* tag 内容区块 */
+.box-content{
+    width: 700px;
+    padding: 20px 0px 30px 30px;
+    position: relative;
+    top: calc(var(--box-head-h1_height) - 40px);
+    background-color: rgb(173, 173, 173);
+    z-index: 3;
+}
+.box:nth-child(odd) .box-content{
+    left: 50px;
+}
+.box:nth-child(even) .box-content{
+    left: calc(var(--box_width) - 700px);
+}
+.box-content h3{
+    height:25px;
+    color:rgb(202, 0, 0)
+}
+.box-content h3 span{
+    display: inline-block;
+    width: 450px;
+    margin-left: 10px;
+    border: 1px solid rgb(202, 0, 0);
+    background-color: rgb(202, 0, 0);
+    position:relative;
+    bottom: 5px;
+}
+.box-content ul{
+    list-style: none;
+    padding:0;
+}
+.box-content ul h4{
+    display: inline;
+    padding: 5px 10px 5px;
+    background-color:black;
+    color:#FFF;
+}
+.box-content li p{
+    margin: 10px 0px 10px;
+    padding-left: 20px;
+    color: blue;
+    position: relative;
+}
+.box-content li p:before{
+    content: " ";
+    display:block;
+    position: absolute;
+    top: 10px;
+    left:10px;
+    width: 5px;
+    height: 5px;
+    background-color:red;
+}

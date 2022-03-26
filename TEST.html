@@ -1,44 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        div{
-            display: flex;
-            flex: 1 0;
-            height:80px;
-            align-items: center;
-            background-color: grey;
+        .grid{
+            width: 1200px;
+            border:1px solid orange;
+            display:grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows:  repeat(3,1fr);
+            gap: 10px;
         }
-        ul{
-            display: flex;
-            flex: 1 0;
-            align-items: center;
-            list-style: none;
-            background-color: red;
+        .item{
+            background-color:#aaa;
+        font-size: 100px;
         }
-        ul>li{
-            margin-left: 30px;
+        .a{
+            background-color:aqua;
+            grid-column:1/4;
+            grid-row:1/4;
+        }
+        .b{
+            background-color:blueviolet;
+            grid-column:2/3;
+            grid-row:1/4;
+
+        }
+        .c{
+            background-color:coral;
         }
     </style>
 </head>
-
 <body>
-
-    <div>
-        <img src="https://picsum.photos/300/80/?random=10">
-        <ul>
-            <li><a href="#">aaa</a></li>
-            <li><a href="#">bbb</a></li>
-            <li><a href="#">ccc</a></li>
-            <li><a href="#">ddd</a></li>
-        </ul>
-        <a href="#">12345</a>
+    <div class="grid">
+        <div class="item a">1</div>
+        <div class="item b">2</div>
+        <div class="item c">3</div>
     </div>
 </body>
-
 </html>
