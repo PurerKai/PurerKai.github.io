@@ -27,6 +27,7 @@ p{
 .box{
     width: var(--box_width);
     position: relative;
+    padding-top: var(--box-head-h1_height);
     margin: 100px auto 0px;
 }
 /* tag 上区块 */
@@ -59,14 +60,27 @@ p{
 /* tag 图片区块 */
 .box-img{
     position:relative;
-    top: var(--box-head-h1_height);
+    top: 0;
     z-index: 2;
 }
 .box:nth-child(odd) .box-img{
-    left: calc(var(--box-head_width)/2);
+    left: calc(var(--box-head_width) / 2);
 }
 .box:nth-child(even) .box-img{
     left: 0px;
+}
+.box-img:before{
+    content:url(img/video.png);
+    position:absolute;
+    top: 200px;
+
+    z-index: 4;
+}
+.box:nth-child(odd) .box-img:before{
+    left: 660px;
+}
+.box:nth-child(even) .box-img:before{
+    left: -10px;
 }
 /* tag 阴影区块 */
 .box-grey{
@@ -88,7 +102,7 @@ p{
     width: 700px;
     padding: 20px 0px 30px 30px;
     position: relative;
-    top: calc(var(--box-head-h1_height) - 40px);
+    top: -40px;
     background-color: rgb(173, 173, 173);
     z-index: 3;
 }
