@@ -1,0 +1,151 @@
+.info-title span{
+    writing-mode: vertical-lr;
+    vertical-align: middle;
+    line-height: 1;
+    font-size: 120px;
+    font-weight: 300;
+
+}
+.info-content{
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    font-size: 20px;
+    line-height: 2;
+    
+}
+.info-content>h3{
+    font-size: 25px;
+    font-weight: bold;
+}
+.innovation-title{
+    color: #000;
+    padding: 20px 0;
+    width: 100%;
+}
+.innovation>h2{
+    color: #bb0404;
+    font-weight: bold;
+    font-size: 20px;
+}
+.innovation>h2::after{
+    content: '―――――――――――――――――――――――';
+}
+.innovation>h3{
+    background-color: #000;
+    color: #fff;
+    padding: 5px 15px;
+    
+}
+.innovation p{
+    margin: 10px 0;
+    line-height: 1.5;
+    
+}
+.innovation p::before{
+    content: '▪';
+    color: red;
+}
+.info-group{
+    width: 960px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(28, 40px);
+    grid-template-rows: repeat(24, 40px);
+}
+.info-title{
+    color: #fff;
+    background-color: #bb0404;
+    font-size: 40px;
+}
+/* right */
+.group-right .info-txt{
+    width: 350px;
+    grid-area: 2/2/12/14 ;
+    z-index: 5;
+}
+.group-right .info-pic{
+    grid-area: 5/7/15/23;
+    
+}
+.group-right .innovation{
+    display: flex;
+    flex-direction: column;
+    background-color: #eee;
+    align-items: flex-start;
+    width: 680px;
+    line-height: 1;
+    padding: 0 20px;
+    font-size: 16px;
+    grid-area: 15/3/23/18;
+    z-index: 1;
+}
+.group-right .info-bg{
+    background-color: #eee;
+    width: 430px;
+    height: 290px;
+    z-index: -1;
+    grid-area: 3/15/12/26;
+    
+
+
+}
+.group-right .five{
+    display: flex; 
+    flex-direction: column;
+    background-color: #eee;
+    align-items: flex-start;
+    width: 680px;
+    line-height: 1;
+    padding: 0 20px;
+    font-size: 16px;
+    grid-area: 15/3/20/18;
+    z-index: 1;
+}
+.group-right .youtube-icon{
+    grid-area: 11/24/12/25;
+
+}
+
+/* left */
+.group-left .info-title{
+    color: #fff;
+    background-color: #bb0404;
+    text-align: right;
+}
+.group-left .info-bg{
+    background-color: #eee;
+    width: 513px;
+    height: 370px;
+    z-index: -1;
+    grid-area: 4/8/13/20;
+    
+}
+.group-left .info-txt{
+    width: 350px;
+    grid-area: 2/15/10/24;
+    z-index: 5;
+}
+.group-left .innovation{
+    display: flex;
+    flex-direction: column;
+    background-color: #ddd;
+    align-items: flex-start;
+    width: 682px;
+    line-height: 1;
+    padding: 0 20px;
+    font-size: 16px;
+    grid-area: 15/8/20/24;
+    z-index: 1;
+
+}
+.group-left .info-pic{
+    grid-area: 5/2/15/18;
+}
+.group-left .four{
+    grid-area: 15/8/21/24;
+}
+.group-left .youtube-icon{
+    grid-area: 10/1/11/2;
+    
+}

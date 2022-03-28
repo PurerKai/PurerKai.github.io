@@ -1,6 +1,6 @@
 :root{
     --box-head_width:360px;
-    --box-head-h1_height:65px;
+    --box-head-h1_height:120px;
     --box_width:960px;
 }
 html{
@@ -48,6 +48,12 @@ p{
 .box-head h1{
     background-color:rgb(199, 4, 4);
     height: var(--box-head-h1_height);
+}
+.box-head span{
+    writing-mode: vertical-lr;
+    vertical-align: middle;
+    line-height: 1;
+    font-size:var(--box-head-h1_height);
 }
 .box-head-text{
     background-color:black;
@@ -103,7 +109,7 @@ p{
     padding: 20px 0px 30px 30px;
     position: relative;
     top: -40px;
-    background-color: rgb(173, 173, 173);
+    background-color: #eee;
     z-index: 3;
 }
 .box:nth-child(odd) .box-content{
@@ -116,7 +122,7 @@ p{
     height:25px;
     color:rgb(202, 0, 0)
 }
-.box-content h3 span{
+.red-line{
     display: inline-block;
     width: 450px;
     margin-left: 10px;
@@ -137,17 +143,10 @@ p{
 }
 .box-content li p{
     margin: 10px 0px 10px;
-    padding-left: 20px;
-    color: blue;
+    padding-left: 10px;
     position: relative;
 }
 .box-content li p:before{
-    content: " ";
-    display:block;
-    position: absolute;
-    top: 10px;
-    left:10px;
-    width: 5px;
-    height: 5px;
-    background-color:red;
+    content: '▪';
+    color:red;
 }
