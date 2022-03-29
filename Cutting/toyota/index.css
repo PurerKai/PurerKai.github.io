@@ -1,3 +1,4 @@
+@import url(../reset.css);
 :root{
     --box-head_width:360px;
     --box-head-h1_height:120px;
@@ -6,11 +7,6 @@
 html{
     font-size:16px;
 }
-html,body,section,div,h1,h2,h3,h4,p{
-    box-sizing: border-box;
-    margin:0;
-    padding: 0;
-}
 h1{
     font-size:3rem;
     font-weight:100;
@@ -18,10 +14,12 @@ h1{
     width:100%;
 }
 h2{
+    font-size: 1.5rem;
     font-weight:700;
 }
 p{
     font-size:1.1rem;
+    line-height:1.5;
 }
 /* tag 外盒 */
 .box{
@@ -60,12 +58,13 @@ p{
     padding: 15px;
 }
 .box-head-text p{
-    margin:10px 0px 50px;
+    margin:10px 0px 20px;
 }
 
 /* tag 图片区块 */
 .box-img{
     position:relative;
+    width:min-content;
     top: 0;
     z-index: 2;
 }
@@ -131,12 +130,8 @@ p{
     position:relative;
     bottom: 5px;
 }
-.box-content ul{
-    list-style: none;
-    padding:0;
-}
-.box-content ul h4{
-    display: inline;
+.box-content li span{
+    display: inline-block;
     padding: 5px 10px 5px;
     background-color:black;
     color:#FFF;
