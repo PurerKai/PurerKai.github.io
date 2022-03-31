@@ -1,151 +1,134 @@
-.info-title span{
-    writing-mode: vertical-lr;
-    vertical-align: middle;
-    line-height: 1;
-    font-size: 120px;
-    font-weight: 300;
-
+@import url(../reset.css);
+html{
+    font-size:16px;
 }
-.info-content{
-    background-color: #000;
-    color: #fff;
-    padding: 20px;
-    font-size: 20px;
-    line-height: 2;
-    
+h1{
+    font-size:3rem;
+    font-weight:100;
+    text-align:center;
+    width:100%;
 }
-.info-content>h3{
-    font-size: 25px;
-    font-weight: bold;
+h2{
+    font-size: 1.5rem;
+    font-weight:700;
 }
-.innovation-title{
-    color: #000;
-    padding: 20px 0;
-    width: 100%;
+p{
+    font-size:1.1rem;
+    line-height:1.5;
 }
-.innovation>h2{
-    color: #bb0404;
-    font-weight: bold;
-    font-size: 20px;
-}
-.innovation>h2::after{
-    content: '―――――――――――――――――――――――';
-}
-.innovation>h3{
-    background-color: #000;
-    color: #fff;
-    padding: 5px 15px;
-    
-}
-.innovation p{
-    margin: 10px 0;
-    line-height: 1.5;
-    
-}
-.innovation p::before{
-    content: '▪';
-    color: red;
-}
-.info-group{
+/* tag 外盒網格設置 */
+.box{
     width: 960px;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(28, 40px);
-    grid-template-rows: repeat(24, 40px);
+    grid-template-columns: repeat(12, 80px);
+    grid-template-rows: repeat(12, 80px);
 }
-.info-title{
+/* tag 上区块 */
+.box-head{
+    background-color:black;
     color: #fff;
-    background-color: #bb0404;
-    font-size: 40px;
+    z-index: 3;
 }
-/* right */
-.group-right .info-txt{
-    width: 350px;
-    grid-area: 2/2/12/14 ;
-    z-index: 5;
+.box:nth-child(odd) .box-head{
+    grid-area: 1/1/5/5 ;
 }
-.group-right .info-pic{
-    grid-area: 5/7/15/23;
-    
+.box:nth-child(even) .box-head{
+    grid-area: 1/8/5/13 ;
 }
-.group-right .innovation{
-    display: flex;
-    flex-direction: column;
-    background-color: #eee;
-    align-items: flex-start;
-    width: 680px;
+.box-head h1{
+    background-color:rgb(199, 4, 4);
+}
+.box-head span{
+    writing-mode: vertical-lr;
+    vertical-align: middle;
     line-height: 1;
-    padding: 0 20px;
-    font-size: 16px;
-    grid-area: 15/3/23/18;
+    font-size:80px;
+}
+.box-head h2{
+    margin: 15px;
+}
+.box-head p{
+    padding: 15px;
+}
+/* tag 图片区块 */
+.box-img{
+    position: relative;
+    z-index: 2;
+}
+.box-img img{
+    width: 100%;
+    height: 100%;
+}
+.box:nth-child(odd) .box-img{
+    grid-area: 2/3/8/12 ;
+}
+.box:nth-child(even) .box-img{
+    grid-area: 2/1/8/10 ;
+}
+.box-img:before{
+    content:url(img/video.png);
+    position:absolute;
+    top: 200px;
+    z-index: 4;
+}
+.box:nth-child(odd) .box-img:before{
+    right:-20px;
+}
+.box:nth-child(even) .box-img:before{
+    left:-20px;
+}
+/* tag 阴影区块 */
+.box-back{
+    background-color: rgba(128, 128, 128, 0.1);
     z-index: 1;
+    margin-top: 20px;
 }
-.group-right .info-bg{
+.box:nth-child(odd) .box-back{
+    grid-area: 1/7/6/13;
+}
+.box:nth-child(even) .box-back{
+    grid-area: 1/5/7/11;
+}
+/* tag 内容区块 */
+.box-content{
+    padding: 20px 0px 30px 30px;
+    position: relative;
     background-color: #eee;
-    width: 430px;
-    height: 290px;
-    z-index: -1;
-    grid-area: 3/15/12/26;
-    
-
-
+    z-index: 3;
+    margin-top: 55px;
 }
-.group-right .five{
-    display: flex; 
-    flex-direction: column;
-    background-color: #eee;
-    align-items: flex-start;
-    width: 680px;
-    line-height: 1;
-    padding: 0 20px;
-    font-size: 16px;
-    grid-area: 15/3/20/18;
-    z-index: 1;
+.box:nth-child(odd) .box-content{
+    grid-area: 7/2/12/11;
 }
-.group-right .youtube-icon{
-    grid-area: 11/24/12/25;
-
+.box:nth-child(even) .box-content{
+    grid-area: 7/4/12/13;
 }
-
-/* left */
-.group-left .info-title{
-    color: #fff;
-    background-color: #bb0404;
-    text-align: right;
+.box-content h3{
+    height:25px;
+    color:rgb(202, 0, 0)
 }
-.group-left .info-bg{
-    background-color: #eee;
-    width: 513px;
-    height: 370px;
-    z-index: -1;
-    grid-area: 4/8/13/20;
-    
+.line{
+    display: inline-block;
+    width: 450px;
+    margin-left: 10px;
+    border: 1px solid rgb(202, 0, 0);
+    background-color: rgb(202, 0, 0);
+    position:relative;
+    bottom: 5px;
 }
-.group-left .info-txt{
-    width: 350px;
-    grid-area: 2/15/10/24;
-    z-index: 5;
+.box-content li span{
+    display: inline-block;
+    padding: 5px 10px 5px;
+    background-color:black;
+    color:#FFF;
 }
-.group-left .innovation{
-    display: flex;
-    flex-direction: column;
-    background-color: #ddd;
-    align-items: flex-start;
-    width: 682px;
-    line-height: 1;
-    padding: 0 20px;
-    font-size: 16px;
-    grid-area: 15/8/20/24;
-    z-index: 1;
-
+.box-content li p{
+    margin: 10px 0px 10px;
+    padding-left: 10px;
+    position: relative;
 }
-.group-left .info-pic{
-    grid-area: 5/2/15/18;
-}
-.group-left .four{
-    grid-area: 15/8/21/24;
-}
-.group-left .youtube-icon{
-    grid-area: 10/1/11/2;
-    
+.box-content li p:before{
+    content: '▪';
+    color:red;
 }

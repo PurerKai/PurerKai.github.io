@@ -60,7 +60,6 @@ p{
 .box-head-text p{
     margin:10px 0px 20px;
 }
-
 /* tag 图片区块 */
 .box-img{
     position:relative;
@@ -78,7 +77,6 @@ p{
     content:url(img/video.png);
     position:absolute;
     top: 200px;
-
     z-index: 4;
 }
 .box:nth-child(odd) .box-img:before{
