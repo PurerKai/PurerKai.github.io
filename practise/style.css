@@ -1,0 +1,71 @@
+p {
+    color: blue;
+}
+
+section {
+    padding: 0px 100px 0px;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height:auto;
+}
+
+.box {
+    display: flex;
+    flex-flow: column;
+}
+
+.card {
+    margin: 15px auto;
+    padding: 10px;
+    display: flex;
+    flex-flow: column;
+    border: 1px solid grey;
+}
+
+@media screen and (min-width: 768px) {
+    section {
+        flex-flow: row;
+    }
+    section:last-of-type{
+        flex-flow: row-reverse;
+    }
+
+    .box {
+        flex: 1;
+    }
+
+    .left .card {
+        height: 100%;
+        flex-flow: column wrap;
+    }
+
+    .left .card-text {
+        display: flex;
+        margin-top: 20px;
+        flex: auto;
+    }
+    .left img{
+        height: 55%;
+    }
+    .left h1,.left p{
+        margin: 0px;
+        flex: 50%;
+        border: 1px solid red;
+        background-color: pink;
+    }
+
+    .right {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .right .card {
+        width: 50%;
+        box-sizing: border-box;
+    }
+}
