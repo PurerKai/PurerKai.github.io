@@ -1,0 +1,160 @@
+:root {
+    --main_plr: 20px;
+}
+
+html {
+    font-size: 18px;
+}
+
+header {
+    width: 100%;
+    padding:  10px var(--main_plr);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 12px 0 rgba(36, 50, 66, 0.075);
+}
+
+.logo img {
+    vertical-align: top;
+}
+
+.fa-chevron-down:before {
+    color: grey;
+    font-size: 8px;
+    position: relative;
+    left: 5px;
+    top: -2px;
+}
+
+.navbar-control {
+    display: none;
+}
+
+@media screen and (max-width: 576px) {
+    
+    .navbar {
+        width: 100%;
+        position: absolute;
+        left: 0px;
+        top: 100%;
+        display: none;
+        flex-direction: column;
+    }
+
+    .navbar-control_label {
+        width: 40px;
+        height: 40px;
+        background-color: red;
+    }
+
+    .navbar li {
+        width: 100%;
+    }
+
+    .navbar ul a {
+        width: 100%;
+        display: block;
+        padding: 20px 0px;
+        border-bottom: 1px solid #eee;
+        color: #000;
+    }
+
+    .navbar ul {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .navbar-control:checked~.navbar {
+        display: flex;
+    }
+
+    .nav-btn {
+        padding: 0px 20px 0px;
+    }
+
+    .nav-btn a {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        display: block;
+        background-color: #0061FF;
+        color: #fff;
+        border-radius: 30px;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+
+    .nav-btn a:last-of-type {
+        background-color: transparent;
+        color: #0061FF;
+        ;
+        border: 2px solid #0061FF;
+    }
+
+    .nav-fast-btn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        bottom: 0px;
+    }
+
+    .nav-fast-btn a {
+        width: 50%;
+        padding: 20px;
+        text-align: center;
+        display: block;
+        background-color: #00142D;
+        color: #fff;
+    }
+    .free-btn{
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    :root {
+        --main_plr: 20px;
+    }
+
+    .phone-show {
+        display: none;
+    }
+
+    header {
+        justify-content: flex-start;
+    }
+
+    .navbar ul {
+        list-style: none;
+        width: 100%;
+        height: inherit;
+        padding-left: 65px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .navbar li{
+        height:inherit;
+        margin: 0 10px 0;
+        display:flex;
+        align-items:center;
+        position: relative;
+    }
+    .free-btn{
+        min-width: 120px;
+        margin: 0;
+        padding: 12px 17px 12px;
+        background-color: #0061FF;
+        color:#fff;
+        border-radius: 30px;
+        text-align: center;
+    }
+}
