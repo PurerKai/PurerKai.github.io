@@ -1,0 +1,355 @@
+:root {
+    --body_plr: 20px;
+    --b_size: 2.8rem;
+    --p_size: 1.1rem;
+}
+
+.header {
+    padding: 10px var(--body_plr);
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 12px 0 rgba(36, 50, 66, 0.075);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 100;
+}
+
+.header-logo img {
+    vertical-align: top;
+}
+
+.navbar-control {
+    display: none;
+}
+
+.header-nav-list a {
+    color: #000;
+}
+
+.fa-chevron-down:before {
+    color: grey;
+    font-size: 8px;
+    position: relative;
+    left: 5px;
+    top: -2px;
+}
+
+.banner {
+    width: 100%;
+    background: url(img/bg1.png) no-repeat center/auto 100%;
+    background-size: 100% 100%;
+    color: #fff;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px var(--body_plr);
+    margin-top: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.banner-img img {
+    width: 100%;
+    height: auto;
+}
+
+.banner-text-title {
+    display: block;
+    font-size: var(--b_size);
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.banner-text p {
+    line-height: 1.4;
+    font-size: var(--p_size);
+    margin-bottom: 50px;
+}
+
+.text-light {
+    color: #00C66A;
+}
+
+.input-email {
+    width: 100%;
+    background: unset;
+    border: 1px solid #fff;
+    border-width: 0 0 1px;
+    border-radius: 0;
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 20px;
+
+}
+
+.mail-btn {
+    width: 100%;
+    color: #fff;
+    background-color: #0061FF;
+    border-radius: 30px;
+    padding: 8px 17px 8px;
+    border: none;
+    font-size: 1rem;
+}
+
+/* tag 991 */
+@media screen and (max-width: 991px) {
+    :root {
+        --body_plr: 35px;
+    }
+
+    .header {
+        justify-content: space-between;
+    }
+
+    .header-top,
+    .free-btn {
+        display: none;
+    }
+
+    .navbar-control_label {
+        width: 40px;
+        height: 40px;
+        background-color: red;
+    }
+
+    .navbar-control:checked~.header-nav {
+        display: flex;
+    }
+
+    .header-nav {
+        display: none;
+        width: 100%;
+        padding-bottom: 560px;
+        overflow: scroll;
+        position: absolute;
+        left: 0px;
+        top: 100%;
+        flex-direction: column;
+        background-color: #fff;
+    }
+
+    .header-nav-list {
+        padding: 20px;
+        margin-top: 10px;
+    }
+
+    .header-nav-list a {
+        width: 100%;
+        display: block;
+        padding: 20px 0px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .nav-group-btn {
+        padding: 0px 20px 0px;
+    }
+
+    .nav-group-btn a {
+        width: 100%;
+        height: 56px;
+        padding: 20px;
+        text-align: center;
+        display: block;
+        background-color: #0061FF;
+        color: #fff;
+        border-radius: 30px;
+        margin: 15px auto;
+    }
+
+    .nav-group-btn a:last-of-type {
+        background-color: transparent;
+        color: #0061FF;
+        border: 2px solid #0061FF;
+    }
+
+    .nav-fast-btn {
+        width: 100%;
+        min-height: 56px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        left: 0px;
+        bottom: 0px;
+    }
+
+    .nav-fast-btn a {
+        width: 50%;
+        padding: 20px;
+        text-align: center;
+        display: block;
+        background-color: #00142D;
+        color: #fff;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+    }
+    .banner-text {
+        margin-bottom: 50px;
+    }
+
+    .input-email {
+        width: 350px;
+    }
+
+    .mail-btn {
+        width: 120px;
+        margin-left: 20px;
+    }
+}
+
+/* tag 768*/
+@media screen and (max-width:768px) {
+    :root {
+        --b_size: 2rem;
+    }
+
+
+    .banner {
+        padding-top: 50px;
+        flex-direction: column;
+    }
+
+    .banner-text-title {
+        text-align: center;
+    }
+
+    .banner-text {
+        margin-bottom: 50px;
+    }
+
+    .input-email {
+        width: 350px;
+    }
+
+    .mail-btn {
+        width: 120px;
+        margin-left: 20px;
+    }
+}
+
+/* tag 992 */
+@media screen and (min-width: 992px) {
+    :root {
+        --body_plr: 25px;
+    }
+
+    .nav-fast-btn,
+    .navbar-control_label,
+    .nav-group-btn {
+        display: none;
+    }
+
+    .header {
+        height: 104px;
+        padding-top: 50px;
+        /* justify-content: flex-start; */
+    }
+
+    .header-top {
+        width: 100%;
+        height: 40px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background-color: #00142D;
+        color: #fff;
+        padding-right: var(--body_plr);
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .header-top a {
+        color: #fff;
+        margin-left: 20px;
+    }
+
+    .header-top a:hover,
+    .btn-lang:hover {
+        color: #2684ff;
+    }
+
+    .btn-lang {
+        padding-right: 20px;
+        background-color: #00142D;
+        color: #fff;
+        border: none;
+        border-right: 1px solid #fff;
+    }
+
+    .btn-lang::before {
+        content: "\f0ac";
+        width: 20px;
+        height: 20px;
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+    }
+
+    .header-logo {
+        margin-right: 10px;
+    }
+
+    .header-nav-list {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .header-nav-list a {
+        padding: 0px 8px;
+    }
+
+    .header-nav-list a:hover {
+        color: #0061FF;
+    }
+
+    .header .free-btn {
+        display: block;
+        min-width: 80px;
+        padding: 10px 15px;
+        background-color: #0061FF;
+        color: #fff;
+        border-radius: 30px;
+        text-align: center;
+    }
+
+    .banner {
+        flex-direction: row-reverse;
+        margin-top: 104px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .banner-img,
+    .banner-text {
+        flex: 1;
+    }
+
+    .banner-text {
+        padding-right: 50px;
+    }
+}
+
+/* tag 1200 */
+@media screen and (min-width: 1200px) {
+    :root {
+        --body_plr: 100px;
+    }
+
+    .header {
+        justify-content: flex-start;
+    }
+
+    .free-btn {
+        position: absolute;
+        right: var(--body_plr);
+    }
+}
