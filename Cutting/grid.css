@@ -1,13 +1,12 @@
 :root{
     --gap:15px;
 }
-img {
-    width: 100%;
-    height: auto;
+.fade{
+    display: none;
 }
 
-.h-100 {
-    height: 100%;
+.sm-fade {
+    display: none;
 }
 
 .container {
@@ -16,7 +15,12 @@ img {
     padding: 0 var(--gap) 0;
 }
 
-.row {
+.row{
+    flex: 1 1;
+    display: flex;
+    flex-flow: row wrap;
+}
+.row .row{
     flex: 1 1;
     display: flex;
     flex-flow: row wrap;
