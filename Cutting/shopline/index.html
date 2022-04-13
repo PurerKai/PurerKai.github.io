@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShopLine rwd切版</title>
+    <title>Shopline RWD</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
         integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../reset.css">
     <link rel="stylesheet" href="../grid.css">
-    <link rel="stylesheet" href="shoplinerwd.css">
+    <link rel="stylesheet" href="shopline.css">
 </head>
 
 <body>
@@ -27,9 +27,9 @@
             </a>
         </div>
         <input type="checkbox" name="navbar-control" class="navbar-control" id="navbar-control">
-        <label for="navbar-control" class="navbar-control_label phone-show"> </label>
-        <nav class="navbar">
-            <ul>
+        <label for="navbar-control" class="navbar-control_label"> </label>
+        <nav class="header-nav">
+            <ul class="header-nav-list">
                 <li>
                     <a href="#">開店服務
                         <i class="fa-solid fa-chevron-down"></i>
@@ -60,7 +60,7 @@
                     </a>
                 </li>
             </ul>
-            <div class="nav-btn-group">
+            <div class="nav-group-btn">
                 <a href="#">免費試用</a>
                 <a href="#">登入網店</a>
             </div>
@@ -69,34 +69,31 @@
                 <a href="#">開店說明會</a>
             </div>
         </nav>
-        <a href="#" class="free-btn">免費試用</a>
     </header>
+    <div class="banner">
+        <div class="banner-img">
+            <img srcset="https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397e9f2f00026722389/505x.webp?source_format=png 320w, https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397e9f2f00026722389/630x.webp?source_format=png 601w, https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397e9f2f00026722389/920x.webp?source_format=png 768w, https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397e9f2f00026722389/540x.webp?source_format=png 992w, https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397e9f2f00026722389/800x.webp?source_format=png 1121w"
+                sizes="(min-width: 320px) 504px, (min-width: 601px) 627px, (min-width: 768px) 921px, (min-width: 992px) 535px (min-width: 1121px) 770px,"
+                src="https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397e9f2f00026722389/510x.webp?source_format=png"
+                width="770" height="583" alt="SHOPLINE POS 系統">
+        </div>
+        <div class="banner-text">
+            <span class="banner-text-title">
+                想在哪開店創業 ?
+                <br>
+                <span class="text-light">門市必備零售 POS 系統|</span>
+            </span>
+            <p>
+                超過 35 萬品牌使用！從個人賣家到國際品牌，都能以 SHOPLINE 實現全通路零售，
+                快速拓展市場到世界各地，輕鬆開始你的『 店 』商生意！
+            </p>
+            <form>
+                <input class="input-email" type="email" placeholder="請在此輸入電子信箱 (可隨時更換)" required="" style="color: red;">
+                <button type="submit" class="mail-btn">免費試用</button>
+            </form>
+        </div>
+    </div>
     <main>
-        <section class="banner">
-            <div class="banner-img">
-                <img srcset="https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397e9f2f00026722389/505x.webp?source_format=png 320w, https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397e9f2f00026722389/630x.webp?source_format=png 601w, https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397e9f2f00026722389/920x.webp?source_format=png 768w, https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397e9f2f00026722389/540x.webp?source_format=png 992w, https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397e9f2f00026722389/800x.webp?source_format=png 1121w"
-                    sizes="(min-width: 320px) 504px, (min-width: 601px) 627px, (min-width: 768px) 921px, (min-width: 992px) 535px (min-width: 1121px) 770px,"
-                    src="https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397e9f2f00026722389/510x.webp?source_format=png"
-                    width="770" height="583" alt="SHOPLINE POS 系統">
-            </div>
-            <div class="banner-text">
-                <b>
-                    想在哪開店創業 ?
-                    <br>
-                    <span class="text-light">門市必備零售 POS 系統|</span>
-                </b>
-                <p>
-                    超過 35 萬品牌使用！從個人賣家到國際品牌，都能以 SHOPLINE 實現全通路零售，
-                    快速拓展市場到世界各地，輕鬆開始你的『 店 』商生意！
-                </p>
-                <form>
-                    <input class="input-email" type="email" placeholder="請在此輸入電子信箱 (可隨時更換)" required=""
-                        style="color: red;">
-                    <button type="submit" class="mail-btn">免費試用</button>
-                </form>
-            </div>
-
-        </section>
         <section class="intro">
             <div class="intro-title">
                 <h2>
@@ -110,10 +107,10 @@
             </div>
             <div class="intro-box">
                 <div class="intro-box-text">
-                    <h2>
+                    <h3>
                         免寫程式、多款版型
                         <br>輕鬆打造全能電商網站
-                    </h2>
+                    </h3>
                     <p>
                         不會寫程式也能輕鬆架設品牌電商官網！任何產業都能找到合適的專業設計版型，
                         以滑鼠拖曳就能完成網頁編輯，讓架設網站就像堆積木一樣簡單。
@@ -140,10 +137,10 @@
             </div>
             <div class="intro-box">
                 <div class="intro-box-text">
-                    <h2>
+                    <h3>
                         支持海內外電商
                         <br>金流、物流一次搞定
-                    </h2>
+                    </h3>
                     <p>
                         支持在地及國際金流、物流串接服務，提供海內外顧客最便利的付款及送貨服務，
                         加速消費者完成下單交易，大幅降低購物車放棄率！
@@ -168,10 +165,10 @@
             </div>
             <div class="intro-box">
                 <div class="intro-box-text">
-                    <h2>
+                    <h3>
                         刺激下單，創造回購
                         <br>行銷導流、促購模組任你玩
-                    </h2>
+                    </h3>
                     <p>
                         多元優惠活動、會員集客機制、網紅分潤以及直播購物等豐富功能，
                         將電商行銷玩法一網打盡，助你成功優化行銷活動成效，刺激顧客下單、吸引鐵粉回購！
@@ -196,10 +193,10 @@
             </div>
             <div class="intro-box">
                 <div class="intro-box-text">
-                    <h2>
+                    <h3>
                         O2O 全通路無縫整併
                         <br>輕鬆管理網店、門市以及其他通路
-                    </h2>
+                    </h3>
                     <p>
                         不論是網店拓展門市，還是門市想發展網路生意，
                         從商品、庫存、訂單等各項虛實店舖的資料都能完善整併，輕鬆實現全通路會員經營到多店營運。
@@ -217,7 +214,7 @@
                         <i class="fa-solid fa-arrow-right-long"></i>
                     </a>
                 </div>
-                <div  class="intro-box-img">
+                <div class="intro-box-img">
                     <img alt="O2O 全通路無縫整併 輕鬆管理網店、門市以及其他通路" width="700" height="411"
                         src="https://img.shoplineapp.com/media/image_clips/60a4d3540289ef002f2150cb/original.png?1621414740">
                 </div>
@@ -229,7 +226,7 @@
             </h2>
             <ul class="row row-cols-2 row-cols-md-3 mores-table">
                 <li class="col">
-                    <div class="mores-box">
+                    <div class="mores-img">
                         <img alt="強大庫存及訂單系統" width="72" height="70"
                             src="https://img.shoplineapp.com/media/image_clips/5efef5c3b774cf002ab000ce/original.png?1593767363">
                     </div>
@@ -237,7 +234,7 @@
                     <p>從商品數量、貨況到訂單付款狀態、物流貨態一目瞭然，提升營運效率超有感。</p>
                 </li>
                 <li class="col">
-                    <div class="mores-box">
+                    <div class="mores-img">
                         <img alt="即時化商店業績分析" width="72" height="70"
                             src="https://img.shoplineapp.com/media/image_clips/5efef5c4b774cf0027b00084/original.png?1593767364">
                     </div>
@@ -245,7 +242,7 @@
                     <p>圖表化報表助你一手掌握商店概況，讓數據助攻企業成長，營運策略更有方向。</p>
                 </li>
                 <li class="col">
-                    <div class="mores-box">
+                    <div class="mores-img">
                         <img alt="多國語系、幣值切換" width="72" height="70"
                             src="https://img.shoplineapp.com/media/image_clips/5f34a2e10225e00039a716b9/original.png?1597285089">
                     </div>
@@ -253,7 +250,7 @@
                     <p>想做跨境電商也ＯＫ！提供語言、幣別、稅金等進階功能，友善應對海外消費需求。</p>
                 </li>
                 <li class="col">
-                    <div class="mores-box">
+                    <div class="mores-img">
                         <img alt="專業顧問線上支援" width="72" height="70"
                             src="https://img.shoplineapp.com/media/image_clips/5f34a2e11468c4003c7aace6/original.png?1597285089">
                     </div>
@@ -261,7 +258,7 @@
                     <p>迅速、透明的溝通管道，協助你快速解決從線上到線下、從在地到海外的網店疑難。</p>
                 </li>
                 <li class="col">
-                    <div class="mores-box">
+                    <div class="mores-img">
                         <img alt="廣告行銷加值服務" width="72" height="70"
                             src="https://img.shoplineapp.com/media/image_clips/5f34a2e11468c472e47aa8e9/original.png?1597285089">
                     </div>
@@ -269,7 +266,7 @@
                     <p>由官方認證的專業投手團隊，協助品牌投遞 Facebook、Google、LINE 等廣告。</p>
                 </li>
                 <li class="col">
-                    <div class="mores-box">
+                    <div class="mores-img">
                         <img alt="老闆專屬成長社群" width="72" height="70"
                             src="https://img.shoplineapp.com/media/image_clips/5f34a2e16200760045e6138f/original.png?1597285089">
                     </div>
@@ -283,7 +280,7 @@
                 <span>人氣品牌</span>
                 一致推薦使用
             </h2>
-            <ul class="shop-top">
+            <ul class="shop-list">
                 <li class="click">
                     <img src="img/t1.png" alt="logo">
                 </li>
@@ -301,9 +298,11 @@
                 </li>
             </ul>
             <div class="shop-content">
-                <img alt="Bonny; Read"
-                    src="https://img.shoplineapp.com/media/image_clips/5f06bed2436e2b86c4471215/original.jpg?1594277585">
-                <div class="content-text">
+                <div class="shop-content-img">
+                    <img alt="Bonny; Read"
+                        src="https://img.shoplineapp.com/media/image_clips/5f06bed2436e2b86c4471215/original.jpg?1594277585">
+                </div>
+                <div class="shop-content-text">
                     <a href="#">
                         bonnyread.com.tw
                         <i class="fa-solid fa-arrow-right-long"></i>
@@ -317,8 +316,8 @@
             </div>
         </section>
     </main>
-    <footer>
-        <div class="footer-map">
+    <footer class="footer">
+        <div class="footer-title">
             <h2>
                 全亞洲超過<br>
                 350,000 個品牌都在使用 SHOPLINE
@@ -329,11 +328,11 @@
             </a>
             <img width="615" height="310" alt="" data-ll-status="loaded" src="img/bg3.png">
         </div>
-        <div class="footer-list">
-            <hr>
-            <div class="footer-nav">
-                <div class="footer-nav-box">
-                    <h3>SHOPLINE</h3>
+        <div class="footer-down">
+            <ul class="footer-list">
+                <li>
+                    <input type="checkbox" id="shopline">
+                    <label for="shopline">SHOPLINE</label>
                     <ul>
                         <li>
                             <a href="#">關於我們</a>
@@ -354,9 +353,10 @@
                             <a href="#">媒體報導</a>
                         </li>
                     </ul>
-                </div>
-                <div class="footer-nav-box">
-                    <h3>我要開店</h3>
+                </li>
+                <li>
+                    <input type="checkbox" id="want-store">
+                    <label for="want-store">我要開店</label>
                     <ul>
                         <li><a href="#">方案費用</a></li>
                         <li><a href="#">功能模組</a></li>
@@ -364,9 +364,10 @@
                         <li><a href="#">開店說明會</a></li>
                         <li><a href="#">開店諮詢</a></li>
                     </ul>
-                </div>
-                <div class="footer-nav-box">
-                    <h3>功能特色</h3>
+                </li>
+                <li>
+                    <input type="checkbox" id="func-light">
+                    <label for="func-light">功能特色</label>
                     <ul>
                         <li><a href="#">網路開店</a></li>
                         <li><a href="#">社群購物</a></li>
@@ -377,9 +378,10 @@
                         <li><a href="#">訂單管理</a></li>
                         <li><a href="#">一頁商店</a></li>
                     </ul>
-                </div>
-                <div class="footer-nav-box">
-                    <h3>開店資源</h3>
+                </li>
+                <li>
+                    <input type="checkbox" id="open-store">
+                    <label for="open-store">開店資源</label>
                     <ul>
                         <li><a href="#">開店秘技</a></li>
                         <li><a href="#">版型主題</a></li>
@@ -388,17 +390,19 @@
                         <li><a href="#">最新功能</a>
                         </li>
                     </ul>
-                </div>
-                <div class="footer-nav-box">
-                    <h3>更多解決方案</h3>
+                </li>
+                <li>
+                    <input type="checkbox" id="more-plan">
+                    <label for="more-plan">更多解決方案</label>
                     <ul>
                         <li><a href="#">企業旗艦方案</a></li>
                         <li><a href="#">跨境電商方案</a></li>
                         <li><a href="#">廣告計畫方案</a></li>
                     </ul>
-                </div>
-                <div class="footer-nav-box">
-                    <h3>其他資源</h3>
+                </li>
+                <li>
+                    <input type="checkbox" id="other-help">
+                    <label for="other-help">其他資源</label>
                     <ul>
                         <li><a href="#">電商教室</a></li>
                         <li><a href="#">充電工作坊</a></li>
@@ -407,9 +411,10 @@
                         <li><a href="#">SHOPLINE TRENDS 電商數據庫</a></li>
                         <li><a href="#">LINE 官方帳號</a></li>
                     </ul>
-                </div>
-                <div class="footer-nav-box">
-                    <h3>應用案例</h3>
+                </li>
+                <li>
+                    <input type="checkbox" id="use-plan">
+                    <label for="use-plan" c>應用案例</label>
                     <ul>
                         <li><a href="#">金流與物流</a></li>
                         <li><a href="#">SHOPLINE Payments</a></li>
@@ -418,41 +423,40 @@
                         <li><a href="#">IG 直播 +1</a></li>
                         <li><a href="#">社群電商工具包</a></li>
                     </ul>
-                </div>
-                <div class="covid-19">
-                    <a href="#">COVID-19 應變措施</a>
-                </div>
+                </li>
+            </ul>
+        </div>
+        <div class="covid-19">
+            <a href="#">COVID-19 應變措施</a>
+        </div>
+        <div class="footer-bottom">
+            <ul class="footer-bottom-group">
+                <li><a href="/about/sitemap">網站地圖</a></li>
+                <li><a href="/about/privacy">隱私權政策</a></li>
+                <li><a href="/about/terms">會員條款</a></li>
+            </ul>
+            <div class="footer-bottom-button">
+                <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-comment-dots"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
             </div>
-            <hr>
-            <div id="footer-bottom">
-                <ul>
-                    <li><a href="/about/sitemap">網站地圖</a></li>
-                    <li><a href="/about/privacy">隱私權政策</a></li>
-                    <li><a href="/about/terms">會員條款</a></li>
-                </ul>
-                <div class="button-group">
-                    <a href="#">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa-brands fa-youtube"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa-solid fa-comment-dots"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa-solid fa-envelope"></i>
-                    </a>
-                </div>
-                <div class="copyright">
-                    服務時間 星期一至五 上午 10 點至晚上 7 點<br>© Copyright 2013-22 SHOPLINE Limited.
-                </div>
+            <div class="copyright">
+                服務時間 星期一至五 上午 10 點至晚上 7 點<br>© Copyright 2013-22 SHOPLINE Limited.
             </div>
         </div>
     </footer>
