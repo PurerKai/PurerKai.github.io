@@ -6,20 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .imgbox{
-            display: flex;
-            flex-flow: row wrap;
-        }
-    </style>
 </head>
 
 <body>
-    <button onclick="addAll()">載入全部</button>
-    <button onclick="add()">多一張</button>
-    <button onclick="back()">少一張</button>
-    <div class="imgbox">
+    <h1>寶可夢圖鑑列表</h1>
+    <button id='addall' onclick="displayAll()">看全部</button>
+    <button id='addone' onclick="AddPokemon()">Click +1</button>
+    <button id='removeone' onclick="removePokemon()">Clear -1</button>
+    <button id='resetone' onclick="resetPokemon()">Reset</button>
 
+    <div id="container">
+
+    </div>
     <script src="test.js"></script>
 </body>
 

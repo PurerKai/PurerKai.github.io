@@ -1,23 +1,42 @@
+let container;
+let i = 1;
+const max = 898;
 window.onload = function () {
-
+    container = document.getElementById("container");
 }
-let count = 0;
-function addAll() {
-    for (count = 1; count < 899; count++) {
-        create();
+function displayAll() {
+    console.log("aaa");
+    resetPokemon()
+    for (i = i; i < max; i++) {
+        addPokemon();
     }
 }
-function add() {
-    create();
+
+function AddPokemon() {
+    if (i > 898) {
+        alert("已载入完毕")
+        return;
+    }
+    else{
+        addPokemon();
+        i++;
+    }
 }
-function back() {
-    document.querySelector("img:nth-child(1)").innerHTML="";
+function addPokemon() {
+    let filename = i.toString().padStart(3, "0");
+    let pathFile = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${filename}.png`;
+    let img = document.createElement("img");
+    img.setAttribute("src", pathFile);
+    img.addEventListener("click", function (event) {
+        container.removeChild(event.target);
+    });
+    container.appendChild(img);
 }
-function create() {
-    var num = count.toString().padStart(3, "0");
-    url = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${num}.png`
-    var img = document.createElement("div");
-    img.innerHTML = `<img src="${url}" alt="">`
-    document.querySelector(".imgbox").append(img);
-    count++;
+function removePokemon() {
+    container.removeChild(container.lastChild);
+    i--;
+}
+function resetPokemon() {
+    container.innerHTML = "";
+    i=1;
 }
