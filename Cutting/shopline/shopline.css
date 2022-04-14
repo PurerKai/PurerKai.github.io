@@ -406,7 +406,9 @@ h3 {
     border-radius: 50%;
     color: #fff;
 }
-.footer-bottom-group a,.copyright{
+
+.footer-bottom-group a,
+.copyright {
     color: #fff;
 }
 
@@ -449,23 +451,57 @@ h3 {
     .navbar-control_label {
         width: 40px;
         height: 40px;
-        background-color: red;
+        display: flex;
+        flex-flow: column;
+        padding: 5px;
+        justify-content: space-around;
+        background-color: black;
     }
 
-    .navbar-control:checked~.header-nav {
-        display: flex;
+    .bar {
+        display: block;
+        min-height: 3px;
+        width: 100%;
+        background-color: #eee;
+        content: '';
+        position: relative;
+        transition: all 1s;
+    }
+
+    #navbar-control:checked~label .bar {
+        background-color: #220000;
+    }
+
+    #navbar-control:checked~label .bar:first-child {
+        background-color: white;
+        top: 10px;
+        transform: rotate(45deg);
+    }
+
+    #navbar-control:checked~label .bar:last-child {
+        background-color: white;
+
+        bottom: 10px;
+        transform: rotate(-45deg);
     }
 
     .header-nav {
-        display: none;
+        display: flex;
         width: 100%;
-        padding-bottom: 560px;
-        overflow: scroll;
+        flex-grow: 1;
+        padding-bottom: 60px;
+        overflow:scroll;
         position: absolute;
-        left: 0px;
+        right: -100%;
         top: 100%;
+        height: calc(100vh - 100% - 56px);
         flex-direction: column;
         background-color: #fff;
+        transition: all 1s;
+    }
+
+    .navbar-control:checked~.header-nav {
+        right:0px;
     }
 
     .header-nav-list {
@@ -851,18 +887,22 @@ h3 {
         display: flex;
         flex-direction: row;
     }
-    .footer-bottom-group li{
+
+    .footer-bottom-group li {
         padding-left: 10px;
     }
-    .footer-bottom-group li a{
+
+    .footer-bottom-group li a {
         padding-left: 5px;
     }
-    .footer-bottom-group li:not(:first-child) a{
+
+    .footer-bottom-group li:not(:first-child) a {
         border-left: 1px #fff solid;
     }
-    .footer-bottom-button a{
-        margin-left:5px;
-        margin-right:5px;
+
+    .footer-bottom-button a {
+        margin-left: 5px;
+        margin-right: 5px;
     }
 }
 
