@@ -1,9 +1,3 @@
-let h2 = document.querySelector("h2");
-var aaa=123,bbb=456
-h2.innerHTML+=`${aaa} ~~~ ${bbb}`;
-aaa=222
-h2.innerHTML=`${aaa} ~~~ ${bbb}`;
-
 let btn = document.querySelectorAll(".num");
 let input = document.querySelector("input");
 let h1 = document.querySelector("h1");
