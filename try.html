@@ -1,18 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 </head>
+
 <body>
+    <div class="jumbotron bg-info">
+        <h1>用Array陣列資料結合DOM API動態產生Table</h1>
+    </div>
+    <div id="container">
+
+    </div>
+
+
+
     <script>
-        var person={
-            "name": 'kaikai',
-            "age":22,
-            "height":175
+        let div = document.querySelector("#container");
+        
+        let Titles = ['國家', '確診', '死亡', '治癒'];
+        let Taiwan = ['台灣', 41, 1, 12];
+        let China = ['中國', 80134, 2914, 44595];
+        let America = ['美國', 9665, 146, 694];
+        let Global = [Taiwan, China, America];
+        
+        window.onload = function () {
+
+            var table = document.createElement("table")
+            table.setAttribute("class", "table table-dark table-striped")
+            
+            var firstrow = document.createElement("tr")
+            for (var i of Titles) {
+                var th = document.createElement("th")
+                th.innerHTML = i
+                firstrow.appendChild(th)
+            }
+            table.appendChild(firstrow)
+            var tbody = document.createElement("tbody")
+            
+            for (var i of Global) {
+                var contentrow = document.createElement("tr")
+                
+                for (var x of i) {
+                    var td = document.createElement("td");
+                    td.innerHTML = x
+                    contentrow.appendChild(td)
+                }
+                tbody.appendChild(contentrow)
+            }
+            table.appendChild(tbody)
+            div.appendChild(table)
         }
     </script>
 </body>
+
 </html>
