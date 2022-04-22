@@ -2224,13 +2224,13 @@
                 var table = document.createElement("table")
                 table.setAttribute("class", "table table-dark table-striped")
 
-                // var firstrow = document.createElement("tr")
-                // for (var i of Titles) {
-                //     var th = document.createElement("th")
-                //     th.innerHTML = i
-                //     firstrow.appendChild(th)
-                // }
-                // table.appendChild(firstrow)
+                var firstrow = document.createElement("tr")
+                for (var i in heroArray[0]) {
+                    var th = document.createElement("th")
+                    th.innerHTML = i
+                    firstrow.appendChild(th)
+                }
+                table.appendChild(firstrow)
                 var tbody = document.createElement("tbody")
 
                 for (var i of heroArray) {

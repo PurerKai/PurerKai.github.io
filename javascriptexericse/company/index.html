@@ -11,28 +11,30 @@
 </head>
 
 <body>
-
-    <canvas id="mkShare"></canvas>
-    <table class="table table-bordered table-striped">
-        <!-- <thead>
-            <tr>
-                <th>排名</th>
-                <th>公司名稱</th>
-                <th>國別</th>
-                <th>市佔率</th>
-            </tr>
-        </thead>
-
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>台積電</td>
-                <td>台灣</td>
-                <td>53.1%</td>
-            </tr>
-        </tbody> -->
-    </table>
-
+    <div class="d-flex align-items-start p-4">
+        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <button class="nav-link  active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home"
+                type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">圓餅圖</button>
+            <button class="nav-link" id="v-pills-long-tab" data-bs-toggle="pill" data-bs-target="#v-pills-long"
+                type="button" role="tab" aria-controls="v-pills-long" aria-selected="false">長條圖</button>
+            <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
+                type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">表格</button>
+        </div>
+        <div class="tab-content w-100" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                <canvas id="mkShare"></canvas>
+            </div>
+            <div class="tab-pane fade" id="v-pills-long" role="tabpanel" aria-labelledby="v-pills-long-tab">
+                <canvas id="long"></canvas>
+            </div>
+            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                <div id="table"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js"
         integrity="sha512-G8JE1Xbr0egZE5gNGyUm1fF764iHVfRXshIoUWCTPAbKkkItp/6qal5YAHXrxEu4HNfPTQs6HOu3D5vCGS1j3w=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -40,7 +42,7 @@
     <script>
         const marketingShare = {
             version: "v1.0",
-            publish:"2021/12/31",
+            publish: "2021/12/31",
             titles: ["排名", "公司名稱", "國別", "市佔率"],
             data: [
                 { Ranking: 1, Name: "台積電", Country: "台灣", Ratio: 53.1 },
@@ -55,8 +57,8 @@
                 { Ranking: 10, Name: "東部高科", Country: "南韓", Ratio: 1 }
             ]
         };
-        let companies=[],data=[];
-        for(var x in marketingShare.data) {
+        let companies = [], data = [];
+        for (var x in marketingShare.data) {
             // companies[x]=marketingShare.data[x].Name
             companies.push(marketingShare.data[x].Name)
             // data[x]=marketingShare.data[x].Ratio
@@ -64,17 +66,21 @@
         }
 
         window.onload = function () {
-            drawPieChart(companies,data);
+        
+          
+            drawChart(companies, data, 'pie', "mkShare");
+            drawChart(companies, data, 'bar', "long");
+            createTable(marketingShare)
         }
     </script>
 
     <script>
         //第一個參數為公司陣列, 第二個參數為資料陣列
-        function drawPieChart(arr1,arr2) {
+        function drawChart(arr1, arr2, type, id) {
             //Pie Chart圓餅圖
-            let ctxPie = document.getElementById("mkShare");
+            let ctxPie = document.getElementById(id);
             var pieChart = new Chart(ctxPie, {
-                type: 'pie',
+                type: type,
                 data: {
                     labels: arr1,
                     datasets: [{
@@ -100,10 +106,10 @@
                         fontSize: 26,
                         text: '2021年全球晶圓代工市佔率%'
                     },
-                        tooltips: {
-                            mode: 'point',
-                            intersect: true,
-                        },
+                    tooltips: {
+                        mode: 'point',
+                        intersect: true,
+                    },
                     legend: {
                         position: 'bottom',
                         labels: {
@@ -113,11 +119,40 @@
                 }
             });
         }
-    
-        function createTable(){
 
+        function createTable(m) {
+            var table = document.createElement("table")
+            table.setAttribute("class", "table table-dark table-striped")
+
+
+            var tbody = document.createElement("tbody")
+
+            var firstrow = document.createElement("tr")
+            firstrow.setAttribute("class", "table-dark")
+            for (var i in m.data[0]) {
+                var th = document.createElement("th")
+                th.innerHTML = i
+                firstrow.appendChild(th)
+                console.log(i);
+            }
+            tbody.appendChild(firstrow)
+
+            for (var i of m.data) {
+                var contentrow = document.createElement("tr")
+                for (var x in i) {
+                    var td = document.createElement("td");
+                    if (x == "imageurl")
+                        td.innerHTML = `<a href="${i[x]}">圖片連結</a>`
+                    else
+                        td.innerHTML = i[x]
+                    contentrow.appendChild(td)
+                }
+                tbody.appendChild(contentrow)
+            }
+            table.appendChild(tbody)
+            document.querySelector("#table").appendChild(table);
         }
-    
+
     </script>
 </body>
 
