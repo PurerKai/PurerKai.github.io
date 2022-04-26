@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>滑鼠右鍵選單</title>
+    <style>
+        .menu{
+            background-color: rgb(230, 230, 230);
+            list-style: none;
+            padding: 5px;
+            display: none;
+            position:absolute;
+            margin:0px;
+        }
+        .menu li:hover{
+            background-color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+            <ul class="menu">
+                <li>1:上一頁</li>
+                <li>2:下一頁</li>
+                <li>3:首頁</li>
+            </ul>
+    <script>
+        window.onload = () => {
+            let menu=document.querySelector(".menu")
+            document.oncontextmenu = function (event) {
+                event.preventDefault();
+            };
+            document.addEventListener("click",()=>{
+                menu.style.display="none";
+            })
+            document.addEventListener("mousedown", e => {
+                if(e.which ==3){
+                    menu.style.left = e.pageX + 'px';
+                    menu.style.top = e.pageY + 'px';
+                    menu.style.display="block";
+                }
+            })
+        }
+    </script>
+</body>
+
+</html>
