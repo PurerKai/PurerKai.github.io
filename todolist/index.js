@@ -29,26 +29,22 @@ function newList(data) {
 
     var content = document.createElement("div");
     content.setAttribute("id", data._id);
-    content.setAttribute("class", "content");
+    content.setAttribute("class", "content col");
     content.innerHTML = `
-    <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
-        <div class="card-header">${data.title}</div>
+    <div class="m-auto card text-dark bg-light mb-3" style="max-width: 18rem;">
+        <div class="card-header">
+        <input type="checkbox" onclick="changeStatus('${data._id}',this)"/>
+            ${data.title}
+            <div class="btn-group" role="group" aria-label="Basic outlined example">
+                <button type="button" class="btn btn-outline-primary">修改</button>
+                <button type="button" class="btn btn-outline-primary">確認</button>
+                <button type="button" class="btn btn-outline-primary">刪除</button>
+            </div>
+        </div>
         <div class="card-body">
-        <p class="card-text">${data.message}</p>
-    </div>
-</div>`
-    // content.innerHTML = `
-    // <div class="${titleClass}">
-    //     <input type="checkbox" onclick="changeStatus('${data._id}',this)">
-    //     <h2 id="title${data._id}">${data.title}</h2>
-    //     <button class="i_btn" onclick="removeList('${data._id}')">刪除</button>
-    //     <button id="edit${data._id}" class="i_btn" onclick="editList('${data._id}')" style="display:${editClass}">修改</button>
-    //     <button id="update${data._id}" class="i_btn" onclick="updateList('${data._id}')" style="display:none">刪除</button>
-    // </div>
-    // <div class="${messageClass}">
-    //     <p id="message${data._id}">${data.message}</p>
-    // </div>
-    // `
+            <p class="card-text">${data.message}</p>
+        </div>
+    </div>`
     document.querySelector(".list-box").append(content);
 }
 function changeStatus(e) {
