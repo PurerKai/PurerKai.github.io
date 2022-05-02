@@ -1,53 +1,109 @@
-var todolist = [];
-var id = 1;
+let todolist = [];
+let count = 1;
 function addList() {
-    var _title = document.querySelector("#title");
-    var _message = document.querySelector("#message");
-
-    if (_message.value == "" || _title.value == "")
-        alert("請輸入標題和內容!!")
+    var _message = $q("#message");
+    if (_message.value.trim() == "")
+        alert("請輸入內容!!")
     else {
-        var newtodo = {
-            "_id": id,
-            "title": _title.value,
+        let newtodo = {
+            "id": count,
             "message": _message.value,
             "status": false
         };
         todolist.push(newtodo);
-        newList(newtodo);
-        id++;
-        _title.value = ""
+        showList(newtodo);
+        count++;
         _message.value = ""
     }
 }
-function newList(data) {
-    console.log("新增");
-    var status = data.status ? "checked" : "";
-    var titleClass = data.status ? "finish" : "undone";
-    var messageClass = data.status ? "finish" : "undone";
-    var editClass = data.status ? "none" : "inline";
-
-    var content = document.createElement("div");
-    content.setAttribute("id", data._id);
+function showList(data) {
+    let content = document.createElement("div");
+    content.setAttribute("id", `box${data.id}`);
     content.setAttribute("class", "content col");
     content.innerHTML = `
-    <div class="m-auto card text-dark bg-light mb-3" style="max-width: 18rem;">
-        <div class="card-header">
-        <input type="checkbox" onclick="changeStatus('${data._id}',this)"/>
-            ${data.title}
-            <div class="btn-group" role="group" aria-label="Basic outlined example">
-                <button type="button" class="btn btn-outline-primary">修改</button>
-                <button type="button" class="btn btn-outline-primary">確認</button>
-                <button type="button" class="btn btn-outline-primary">刪除</button>
+    <div id="tt${data.id}" class="m-auto card text-dark bg-light mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <div class="card-title m-0">
+                <input id="checkbox${data.id}"  type="checkbox" onclick="changeStatus('${data.id}',this)"/>
+                <label id="label${data.id}" for="checkbox${data.id}">未完成</label>
+                <span id="message${data.id}" class="card-text ms-4">${data.message}</span>
+            </div>
+            <div class="btn-group">
+                <button id="edit${data.id}" type="button" class="btn bg-warning" onclick="edit('${data.id}')">修改</button>
+                <button id="doit${data.id}" type="button" class="btn bg-success text-white d-none" onclick="doit('${data.id}')">確認</button>
+                <button type="button" class="btn  bg-danger text-white" onclick="removelist('${data.id}')">刪除</button>
             </div>
         </div>
-        <div class="card-body">
-            <p class="card-text">${data.message}</p>
-        </div>
     </div>`
-    document.querySelector(".list-box").append(content);
+    $q(".list-box").append(content);
 }
-function changeStatus(e) {
-    document.querySelector("#e")
+function edit(id) {
+    show($q("#doit" + id));
+    hide($q("#edit" + id));
 
+    var input = document.createElement('input');
+    input.type = "text";
+    input.id = "edit_message" + id;
+    input.value = $q("#message" + id).innerHTML;
+    hide($q("#message" + id));
+    $q("#message" + id).parentNode.appendChild(input);
+}
+function doit(id) {
+    $q("#message" + id).innerHTML = $q("#edit_message" + id).value;
+    $q("#edit_message" + id).remove();
+    show($q("#message" + id));
+
+    var index = todolist.findIndex(i => i.id == id);
+    todolist[index].message = $q("#message" + id).innerHTML;
+
+    hide($q("#doit" + id))
+    show($q("#edit" + id))
+}
+function removelist(e) {
+    var index = todolist.findIndex(i => i.id == e);
+    var sure = window.confirm(`你確定要刪除嗎?`);
+    if (sure == true) {
+        $q("#box" + e).remove();
+        todolist.splice(index, 1);
+    }
+    else alert("取消刪除。")
+}
+function sent() {
+    console.log(JSON.stringify(todolist));
+    alert(JSON.stringify(todolist))
+}
+function changeStatus(id, btnstatus) {
+    var index = todolist.findIndex(i => i.id == id);
+    todolist[index].status = btnstatus.checked;
+    if (btnstatus.checked == true) {
+        $q("#tt" + id).classList.add('bg-info');
+        $q("#tt" + id).classList.remove('bg-light');
+        hide($q('#edit' + id));
+        hide($q('#doit' + id));
+        if ($q("#edit_message" + id) != null) {
+            $q("#edit_message" + id).remove();
+            show($q("#message" + id));
+        }
+        $q("#message" + id).classList.add('text-decoration-line-through');
+        $q("#label"+id).innerText="已完成";
+    } else {
+        $q("#tt" + id).classList.remove('bg-info');
+        $q("#tt" + id).classList.add('bg-light');
+        show($q('#edit' + id));
+        $q("#message" + id).classList.remove('text-decoration-line-through');
+        $q("#label"+id).innerText="未完成";
+    }
+}
+function $q(node) {
+    console.log(node);
+    let nodelist = document.querySelectorAll(node);
+    if (nodelist.length == 0)
+        return null;
+    return nodelist.length == 1 ? nodelist[0] : nodelist;
+}
+function show(dom) {
+    dom.classList.remove('d-none')
+}
+function hide(dom) {
+    dom.classList.add('d-none');
 }

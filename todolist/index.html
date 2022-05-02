@@ -12,22 +12,18 @@
 </head>
 
 <body>
-    <main class="container">
+    <main class="container mt-5 todolist">
         <div class="mb-3 d-flex justify-content-center flex-column text-center">
+            <button class="btn btn-primary my-3" onclick="sent()">查看</button>
             <h1>TodoList</h1>
             <div class="input-group input-group-sm mb-3">
-                <span class="input-group-text" id="inputGroup-sizing-sm">標題</span>
-                <input id="title" name="title" type="text" class="form-control" aria-label="Sizing example input"
-                    aria-describedby="inputGroup-sizing-sm">
-            </div>
-            <div class="input-group input-group-sm mb-3">
-                <span class="input-group-text" id="inputGroup-sizing-sm">內容</span>
+                <span class="input-group-text" id="inputGroup-sizing-sm">提醒</span>
                 <input id="message" name="message" type="text" class="form-control" aria-label="Sizing example input"
                     aria-describedby="inputGroup-sizing-sm">
             </div>
             <button type="button" class="btn btn-primary" onclick="addList()">新增</button>
         </div>
-        <div class="list-box row row-cols-3 justify-content-around"></div>
+        <div class="list-box"></div>
     </main>
     <script src="index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
