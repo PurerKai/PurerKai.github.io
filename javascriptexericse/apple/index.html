@@ -12,43 +12,35 @@
 </head>
 
 <body>
-    <div class="all-hide"></div>
-    <main class="container-fluid">
-        <div class="row">
-            <ul class="col-12 d-flex justify-content-center nav nav-pills mb-3" id="pills-tab1">
-                <template id="temp-pills-tab1">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link " data-bs-toggle="pill" type="button"></button>
-                    </li>
-                </template>
-            </ul>
-            <ul class="col-12 d-flex justify-content-center nav nav-pills mb-3 bg-dark color-white" id="pills-tab2"> </ul>
-
-        </div>
+    <nav>
+        <ul id="pills-tab" class="d-flex justify-content-center nav nav-pills mb-3"></ul>
+        <ul id="pills-nav" class="d-flex justify-content-center nav nav-pills mb-3 bg-dark" ></ul>
+        <template id="temp-pills-item">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link border m-2" data-bs-toggle="pill" type="button"></button>
+            </li>
+        </template>
+    </nav>
+    <main class="container">
         <div class="row">
             <div class="col-6 d-flex justify-content-center align-content-center">
                 <img id="banner-img" src="">
             </div>
-            <div class="col-6 item-content"></div>
-            <template id="temp-list">
-                <div class="row row-cols-3 m-3 g-2 list-unstyled"></div>
-            </template>
-            <template id="temp-list-item">
-                <div class="col">
-                    <div class="p-3 border bg-light d-flex flex-column align-items-center rounded-3">
-                        <div class="img-box p-2 m-auto">
-                            <img src="" alt="">
-                        </div>
-                        <p></p>
-                    </div>
-                </div>
-            </template>
-            <template id="temp-storage">
-                <li class="col d-flex flex-column justify-content-center align-items-center">
-                    <p></p>
-                </li>
-            </template>
+            <div id="main-content" class="col-6"></div>
         </div>
+        <template id="temp-list">
+            <div class="row row-cols-3 m-3 g-2 list-unstyled"></div>
+        </template>
+        <template id="temp-list-item">
+            <div class="col list-item">
+                <div class="p-3 border bg-light d-flex flex-column align-items-center rounded-3">
+                    <div class="color-box p-2 m-auto">
+                        <p class="mt-2"></p>
+                    </div>
+                    
+                </div>
+            </div>
+        </template>
     </main>
 
     <script src="index.js"></script>

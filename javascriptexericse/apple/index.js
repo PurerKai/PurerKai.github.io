@@ -1,88 +1,120 @@
-var globel_item = {
-    network: "0",
-    storage: "0"
-}
+let json;
 window.onload = function () {
+    const main = $q("#main-content");
+    const pills = $q("#pills-nav");
+    const tab = $q("#pills-tab");
+    const banner = $q("#banner-img");
+
+
     getJson("./data.json");
-    // https://purerkai.github.io/javascriptexericse/apple/ipadair.json    
-}
-function createTitle(data) {
-    var pills = $q("#pills-tab1");
-    for (const type of Object.keys(data)) {
-        let cloneNav = $q('#temp-pills-tab1').content.cloneNode(true);
-        let btn = cloneNav.querySelector("button");
-        btn.setAttribute("data-type", type);
-        btn.innerHTML = type;
-        btn.addEventListener("click", () => {
-            let Main = $q(".item-content");
-            Main.innerHTML = "";
-            $q(`#pills-tab2`).innerHTML = "";
-            for (const item in data[type]) {
-                let cloneNav2 = $q('#temp-pills-tab1').content.cloneNode(true);
-                let btn2 = cloneNav2.querySelector("button");
-                btn2.setAttribute("data-item", item);
-                btn2.innerHTML = item;
-                btn2.addEventListener("click", () => {
-                    createContent(data[type], item)
-                })
-                $q(`#pills-tab2`).append(cloneNav2)
-            }
-        })
-        pills.append(cloneNav);
-    }
-}
-function createContent(data, id) {
-    setBanner("./img/all-" + id + ".jpg")
-    let Main = $q(".item-content");
-    Main.innerHTML = "";
-    for (const x of Object.keys(data[id])) {
-        let clist = $q('#temp-list').content.cloneNode(true).querySelector("div");
-        clist.setAttribute("id", `${id}-${x}-list`)
-        for (const attr of Object.keys(data[id][x])) {
-            let citem = $q('#temp-list-item').content.cloneNode(true);
-            citem.addEventListener("click", () => {
-                banner.setAttribute("src", "./img/" + id + "-" + color + ".png");
+
+    function createTab() {
+        for (var model of Object.keys(json)) {
+            let li = $q('#temp-pills-item').content.cloneNode(true);
+            let btn = li.querySelector("button");
+            btn.innerHTML = model;
+            btn.addEventListener("click", (e) => {
+                createNav(json[e.target.innerHTML]);
             })
-            citem.querySelector(".col").setAttribute("id", `${attr}`);
-            var img = citem.querySelector("img");
-            img.setAttribute("src", "./img/color-" + attr + ".jfif");
-            img.setAttribute("alt", `color-${attr}`);
-            var p = citem.querySelector("p");
-            p.innerHTML = data[id][x][attr];
+            tab.append(li);
+        }
+    }
+    function createNav(data) {
+        setBanner("")
+        main.innerHTML = "";
+        pills.innerHTML = "";
+        for (var type of Object.keys(data)) {
+            let li = $q('#temp-pills-item').content.cloneNode(true);
+            let btn = li.querySelector("button");
+            btn.innerHTML = type;
+            btn.addEventListener("click", (e) => {
+                createMain(data[e.target.innerHTML], e.target.innerHTML)
+            })
+            pills.append(li)
+        }
+    }
+    function createMain(data, id) {
+        main.innerHTML = "";
+        setBanner("./img/all-" + id + ".jpg")
+        for (var attr of Object.keys(data)) {
+            var title = document.createElement("h2");
+            title.innerHTML = attr;
+            title.classList.add("text-center");
+            main.append(title);
+            createList(data[attr], id, attr);
+        }
+
+        var btn = document.createElement("button");
+        btn.innerHTML = "查看價格"
+        btn.addEventListener("click", () => {
+            let selects = $q(".selected");
+            var total = 0;
+            if (selects == null)
+                return
+            if (Array.from(selects).length == 0) {
+                number = data[selects.getAttribute("data-attr")][selects.getAttribute("data-value")]
+                if (parseInt(number)) {
+                    total += parseInt(number);
+                }
+            } else {
+                for (var i of selects) {
+                    number = data[i.getAttribute("data-attr")][i.getAttribute("data-value")]
+                    if (parseInt(number))
+                        total += parseInt(number);
+                }
+            }
+            alert("目前選購最少需要"+total+"元");
+        })
+        main.append(btn)
+    }
+    function createList(data, id, attr) {
+        let clist = $q('#temp-list').content.cloneNode(true).querySelector("div");
+        clist.setAttribute("id", `${id}-${attr}-list`);
+        for (var item of Object.keys(data)) {
+            let citem = $q('#temp-list-item').content.cloneNode(true);
+            citem.querySelector(".list-item>div").setAttribute("data-attr", attr);
+            citem.querySelector(".list-item>div").setAttribute("data-value", item);
+            let p = citem.querySelector("p");
+            if (attr == "color") {
+                var img = document.createElement("img");
+                img.setAttribute("src", "./img/color-" + item + ".jfif");
+                img.setAttribute("alt", `color-${item}`);
+                citem.querySelector(".list-item").addEventListener("click", (e) => {
+                    color = e.target.parentNode.querySelector("p").innerHTML;
+                    setBanner(`./img/${id}-${color}.png`);
+                })
+                citem.querySelector("p").before(img);
+            }
+            p.innerHTML = item;
             clist.appendChild(citem);
         }
-        Main.append(clist);
-        if (Object.keys(data[id]).indexOf("size")!=-1)
-            clickColorImg(Main,id,x,`./img/${id}-11`);
-        else
-            clickColorImg(Main,id,x,`./img/${id}`);
+        main.append(clist);
+        setSelected(`#${id}-${attr}-list>div`);
     }
-}
-function clickColorImg(m,id,x,url) {
-    let ul = m.querySelectorAll(`#${id}-${x}-list>div`);
-    for (const li of ul) {
-        li.addEventListener("click", e => {
-            for (const i of ul) {
-                i.querySelector("div").classList.remove("border-primary");
-            }
-            li.querySelector("div").classList.add("border-primary");
-            if (x == "color")
-                setBanner(url+`-${li.id}.png`);
-        })
+    function setBanner(url) {
+        banner.setAttribute("src", url);
     }
-}
-function setBanner(url) {
-    let banner = $q("#banner-img");
-    banner.setAttribute("src", url);
-}
-function getJson(url) {
-    fetch(url)
-        .then(response => {
-            return response.json();
-        })
-        .then(data => {
-            createTitle(data);
-        });
+    function setSelected(url) {
+        let ul = $q(url);
+        for (const li of ul) {
+            li.addEventListener("click", () => {
+                for (var all of ul) {
+                    all.querySelector("div").classList.remove("border-primary", "selected");
+                }
+                li.querySelector("div").classList.add("border-primary", "selected");
+            })
+        }
+    }
+    function getJson(url) {
+        fetch(url)
+            .then(response => {
+                return response.json();
+            })
+            .then(data => {
+                json = data;
+                createTab();
+            });
+    }
 }
 
 function $q(node) {
@@ -90,7 +122,4 @@ function $q(node) {
     if (nodelist.length == 0)
         return null;
     return nodelist.length == 1 ? nodelist[0] : nodelist;
-}
-function showPrice() {
-    $q(`#price-span`).innerHTML = parseInt(globel_item.storage) + parseInt(globel_item.network);
 }
