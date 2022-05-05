@@ -1,6 +1,6 @@
 {
-    "Iphone": {
-        "Iphone-13-pro":{
+    "iphone": {
+        "iphone-13-pro":{
             "size":{
                 "IPhone-13-Pro":"32900",
                 "IPhone-13-Pro-Max":"36900"
@@ -19,7 +19,7 @@
                 "1TB": "17500"
             }
         },
-        "Iphone-11":{
+        "iphone-11":{
             "color": {
                 "lightgreen":"亮綠色",
                 "lightpurple":"亮紫色",
@@ -34,8 +34,8 @@
             }
         }
     },
-    "Ipad": {
-        "Ipad-air": {
+    "ipad": {
+        "ipad-air": {
             "color": {
                 "spacegray":"太空灰色",
                 "pink":"粉紅色",
@@ -52,7 +52,7 @@
                 "Cellular": "5000"
             }
         },
-        "Ipad-pro": {
+        "ipad-pro": {
             "size":{
                 "11":"24900",
                 "12.9":"34900"
