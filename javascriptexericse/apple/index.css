@@ -40,12 +40,19 @@
     color: #fff;
 }
 
-.clicked {
-    background: red;
-}
 
 #price {
     font-size: 32px;
+}
+.list-item:hover>div{
+    background:rgb(0,0,0,0.7)!important;
+    color: #fff!important;
+    transition: all 1s;
+}
+.selected{
+    background:rgb(0,0,0,0.7)!important;
+    color: #fff!important;
+    transition: all 1s;
 }
 
 /* "Iphone-13":{
