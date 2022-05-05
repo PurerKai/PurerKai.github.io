@@ -46,6 +46,7 @@ window.onload = function () {
 
         var btn = document.createElement("button");
         btn.innerHTML = "查看價格"
+        btn.classList.add("btn","btn-primary")
         btn.addEventListener("click", () => {
             let selects = $q(".selected");
             var total = 0;
