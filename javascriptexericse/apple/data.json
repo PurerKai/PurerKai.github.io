@@ -1,35 +1,77 @@
 {
-    "Iphone": {
-        "color": {
-            "green":"松嶺青色",
-            "silver":"銀色",
-            "gold":"金色",
-            "graphite":"石墨色",
-            "blue":"天峰藍色"
+    "iphone": {
+        "iphone-13-pro":{
+            "size":{
+                "IPhone-13-Pro":"32900",
+                "IPhone-13-Pro-Max":"36900"
+            },
+            "color": {
+                "green":"松嶺青色",
+                "silver":"銀色",
+                "gold":"金色",
+                "graphite":"石墨色",
+                "blue":"天峰藍色"
+            },
+            "storage": {
+                "128GB": "0",
+                "256GB": "3500",
+                "512GB": "10500",
+                "1TB": "17500"
+            }
         },
-        "storage": {
-            "128GB": "32900",
-            "256GB": "36400",
-            "512GB": "43400",
-            "1TB": "50400"
+        "iphone-11":{
+            "color": {
+                "lightgreen":"亮綠色",
+                "lightpurple":"亮紫色",
+                "white":"白色",
+                "yellow":"黃色",
+                "black":"黑色",
+                "red":"紅色"
+            },
+            "storage": {
+                "64GB": "16500",
+                "128GB": "18100"
+            }
         }
     },
-    "Ipad-air": {
-        "color": {
-            "spacegray":"太空灰色",
-            "pink":"粉紅色",
-            "purple":"紫色",
-            "blue":"藍色",
-            "starlight":"星光色"
+    "ipad": {
+        "ipad-air": {
+            "color": {
+                "spacegray":"太空灰色",
+                "pink":"粉紅色",
+                "purple":"紫色",
+                "blue":"藍色",
+                "starlight":"星光色"
+            },
+            "storage": {
+                "64GB": "17900",
+                "256GB": "22900"
+            },
+            "network": {
+                "Wi-Fi": "0",
+                "Cellular": "5000"
+            }
         },
-        "storage": {
-            "64GB": "17900",
-            "256GB": "22900"
-        },
-        "network": {
-            "Wi-Fi": "0",
-            "Cellular": "5000"
+        "ipad-pro": {
+            "size":{
+                "11":"24900",
+                "12.9":"34900"
+            },
+            "color": {
+                "spacegray":"太空灰色",
+                "silver":"銀色"
+            },
+            "storage": {
+                "128GB": "0",
+                "256GB": "3100",
+                "512GB": "9300",
+                "1TB": "21700",
+                "2TB": "34100"
+            },
+            "network": {
+                "Wi-Fi": "0",
+                "Cellular": "5000"
+            }
         }
-    },
-    "Macpro": {}
+    }
 }

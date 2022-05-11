@@ -1,20 +1,72 @@
-/* .color-list li{
-    width: 200px;
-    height: 100px;
-} */
+#banner-img {
+    width: auto;
+    max-width: 100%;
+    height: 400px;
+}
+@media screen and (min-width: 768px) {
+    #banner-img {
+        width: 100%;
+        height: 600px;
+    }
+}
 
-.img-box img {
+@media screen and (min-width: 992px) {
+    #banner-img {
+        width: 100%;
+        height: 800px;
+    }
+}
+
+
+
+#main-content {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.color-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.color-box img {
     width: 50px;
     height: 50px;
 }
 
-#banner-img{
-    width: 100%;
-    height: auto;
+#pills-nav .nav-link {
+    color: #fff;
 }
-.clicked{
-    background: red;
-}
-#price{
+
+
+#price {
     font-size: 32px;
 }
+.list-item:hover>div{
+    background:rgb(0,0,0,0.7)!important;
+    color: #fff!important;
+    transition: all 1s;
+}
+.selected{
+    background:rgb(0,0,0,0.7)!important;
+    color: #fff!important;
+    transition: all 1s;
+}
+
+/* "Iphone-13":{
+    "color": {
+        "green":"松嶺青色",
+        "silver":"銀色",
+        "gold":"金色",
+        "graphite":"石墨色",
+        "blue":"天峰藍色"
+    },
+    "storage": {
+        "128GB": "0",
+        "256GB": "36400",
+        "512GB": "43400",
+        "1TB": "50400"
+    }
+} */
